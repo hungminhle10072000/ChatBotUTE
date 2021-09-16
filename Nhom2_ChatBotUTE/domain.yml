@@ -1,0 +1,817 @@
+version: "2.0"
+
+intents:
+  - goodbye
+  - bot_challenge
+  - chao_hoi
+  - cam_on
+  - chungnhan_giayto1
+  - info_namthanhlaptruong
+  - info_hinhanhtruong
+  - info_diachitruong
+  - tamdunghoc
+  - trinhtutamdunghoc
+  - give_name
+  - out_of_scope
+  - chuyennganh
+  - chuyennganh2
+  - chuyennganh3
+  - dkmonhoc1
+  - dkmonhoc2
+  - dkmonhoc3
+  - dkmonhoc4
+  - dkmonhoc5
+  - dkmonhoc6
+  - dkmonhoc7
+  - dkmonhoc8
+  - dkmonhoc9
+  - dkmonhoc10
+  - dkmonhoc11
+  - dkmonhoc12
+  - dkmonhoc13
+  - dkmonhoc14
+  - dkmonhoc15
+  - dkmonhoc16
+  - dkmonhoc17
+  - dkmonhoc18
+  - dkmonhoc19
+  - dkmonhoc20
+  - dkmonhoc21
+  - drl1
+  - drl2
+  - drl3
+  - drl4
+  - drl5
+  - drl6
+  - drl7
+  - drl8
+  - kqhoctap1
+  - kqhoctap2
+  - kqhoctap3
+  - kqhoctap4
+  - kqhoctap5
+  - kqhoctap6
+  - kqhoctap7
+  - kqhoctap8
+  - kqhoctap9
+  - kqhoctap10
+  - kqhoctap11
+  - kqhoctap12
+  - kqhoctap13
+  - kqhoctap14
+  - kqhoctap15
+  - kqhoctap16
+  - kqhoctap17
+  - kqhoctap18
+  - kqhoctap19
+  - kqhoctap20
+  - kqhoctap21
+  - kqhoctap22
+  - kqhoctap23
+  - kqhoctap24
+  - kqhoctap25
+  - kqhoctap26
+  - miengiam1
+  - miengiam2
+  - miengiam3
+  - miengiam4
+  - miengiam5
+  - miengiam6
+  - miengiam7
+  - miengiam8
+  - miengiam9
+  - miengiam10
+  - miengiam11
+  - miengiam12
+  - miengiam13
+  - miengiam14
+  - miengiam15
+# update
+  - ktx
+  - hosonhaphoc
+  - khamsuckhoe
+  - diachi
+  - trangweb
+  - khauhieu
+  - hieutruong
+  - dientich
+  - khoa
+  - khoaCNTT
+  - truongkhoaCNTT
+  - hocba_uutien
+  - tracuu_tuyensinh01
+  - tracuu_tuyensinh02
+  - tracuu_tuyensinh03
+  - tracuu_tuyensinh04
+  - tracuu_tuyensinh05
+  - tracuu_tuyensinh06
+  - lephi_xettuyen01
+  - lephi_xettuyen02
+  - lephi_xettuyen03
+  - method_tuyensinh
+#Hiếu
+  - greet
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - hoi_cachdonghocphi
+  - hoi_hocphi
+  - hoi_nganh
+  - out_of_score
+  - taisao_spkt
+  - hoi_phongCTHHSV
+  - cap_giay_to
+  - thoigian_cap_giayto
+  - thoigian_traketqua
+
+entities:
+  - cust_sex
+  - cust_name
+  - nganh
+
+slots:
+  cust_name:
+    type: text
+  cust_sex:
+    type: text
+  nganh:
+    type: any
+
+lookups:
+  - nganh
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+responses:
+
+#  utter_goodbye:
+#    - text: "GoodBye! Hope To See You Soon :))"
+
+  utter_iamabot:
+    - text: "Tôi là bot được hỗ trợ bởi RASA."
+
+  utter_chao_hoi:
+    - text: "Chào bạn. Bạn tên là gì ?"
+
+  utter_chungnhan_giayto1:
+    - text: "Phòng Công tác HSSV chịu trách nhiệm cấp các loại giấy tờ &amp; giải quyết các
+             yêu cầu sau đây cho SV: Giấy chứng nhận SV (v/v bổ túc hồ sơ tạm hoãn nghĩa vụ
+             quân sự, xin việc làm, xin đi học, xin tạm trú, đi xe buýt, vay tín dụng ưu đãi (mẫu số
+             01/TDSV), bổ túc hồ sơ địa phương,…); xác nhận sổ ưu đãi giáo dục, đào tạo; giải
+             quyết yêu cầu của SV về tạm dừng học tập, xin học tiếp sau tạm dừng, xin thôi học,
+             xin chuyển trường; giấy giới thiệu,...."
+
+  utter_cam_on:
+    - text: "Không có gì, bot sẽ giải đáp các thắc mắc của em cần."
+    - text: "Chúc bạn 1 ngày mới vui vẻ."
+
+#Giới thiệu trươngf
+  utter_info_namthanhlaptruong:
+    - text: "Trường Đại học Sư phạm Kỹ thuật Thành phố Hồ Chí Minh thành lập ngày 5 tháng 10, 1962"
+
+  utter_info_diachitruong:
+    - text: "1 Võ Văn Ngân, Linh Chiểu, Thủ Đức, Thành phố Hồ Chí Minh"
+
+  utter_info_hinhanhtruong:
+    - text : "Đây là hình ảnh của trường :"
+      image: "https://edu2review.com/upload/article-images/2016/12/2643/768x431_spkt.jpg"
+
+# Chào với tên
+  utter_give_name:
+    - text: "Xin chào {cust_name}. Tôi có thể giúp gì {cust_sex}"
+
+
+#Tạm dừng học
+  utter_tamdunghoc:
+    - text: "SV được phép tạm dừng học tập khi có lý do chính đáng; Thời gian tạm dừng
+             tính vào thời gian đào tạo (trừ trường hợp tạm dừng để thi hành nghĩa vụ quân sự, hoặc có
+             lý do chính đáng theo quy định của quy chế); Thời gian tạm dừng tối đa bằng thời gian
+             kéo dài của khóa học. Mỗi lần tạm dừng từ 1 đến 2 học kỳ. Hai lần tạm dừng không được
+             liền kề nhau trừ các trường hợp đặc biệt, nhà trường sẽ xem xét cụ thể."
+
+  utter_trinhtutamdunghoc:
+    - text: "Trình tự tiến hành thủ tục tạm dừnh như sau: \n
+            - SV làm đơn theo mẫu (nhận tại phòng Công tác HSSV hoặc download trên website của
+              phòng); \n
+              - SV hoàn tất các mục trong đơn, đơn được phụ huynh cho ý kiến &amp; chính quyền địa
+                phương xác nhận;\n
+                - SV làm thủ tục thanh toán công nợ tại phòng Kế hoạch tài chính, trả hết sách tại Thư viện; \n
+                - SV nộp đơn tại phòng Công tác HSSV (đơn đã được phụ huynh ký &amp; chính quyền địa
+                  phương xác nhận, phòng KHTC xác nhận hoàn tất công nợ, Thư viện xác nhận trả xong
+                  sách).\n
+                  - SV Nhận quyết định tạm dừng tại phòng Công tác HSSV (sau 3 ngày)."
+
+#Chuyển ngành
+  utter_chuyennganh:
+    - text: "Trường ĐHSPKT Tp. Hồ Chí Minh tuyển sinh theo ngành, nên không giải quyết
+             cho chuyển ngành sau khi thí sinh trúng tuyển, nhập học. Trường hợp đặc biệt và xin
+             chuyển ngành học tại khoa Đào tạo chất lượng cao, SV làm đơn trình Hiệu trưởng xem xét
+             (với điều kiện cùng khối thi, ngành chuyển đến có điểm chuẩn ≤ điểm chuẩn ngành đã
+             trúng tuyển và còn chỉ tiêu)."
+
+  utter_chuyennganh2:
+    - text: "  Điều 17, Quy chế 43 quy định chi tiết về việc học song song hai chương trình.
+               Hiện tại, nhà trường áp dụng chế độ học cùng một lúc hai chương trình cho những SV có
+               nhu cầu và hội đủ các điều kiện. SV có nhu cầu, liên hệ phòng Đào tạo để được hướng
+               dẫn. "
+
+  utter_chuyennganh3:
+    - text: " Từ năm học 2008-2009, trường xin phép và được Bộ Giáo dục &amp; Đào tạo chấp
+        thuận cho đào tạo văn bằng hai ngành Công nghệ Thông tin. Các ngành khác chưa xin ý
+        kiến của Bộ, nên chưa triển khai. Dự kiến kiến trong thời gian tới mở thêm một số ngành. "
+
+# Không hiểu được intent nào
+  utter_out_of_scope:
+    - text: "Xin lỗi tôi không hiểu bạn hỏi gì. Xin bạn hỏi lại !"
+
+#Đăng kí môn học
+  utter_dkmonhoc1:
+    - text: " Để trả nợ các môn học cũ không còn được mở nữa, SV sẽ đăng ký học các môn học tương đương (xem trên website của khoa) hoặc các môn học thay thế (liên hệ trực tiếp với bộ môn quản môn học để được hướng dẫn cụ thể). SV làm đơn xin học môn thay thế để trình Bộ môn và Khoa quản môn học phê duyệt, sau đó nộp cho Phòng Đào tạo"
+
+  utter_dkmonhoc2:
+    - text: "Danh sách sinh viên được phép đăng ký môn học của từng học kỳ do phòng CTHSSV quản lý. Sinh viên không có tên đăng ký môn học có thể do một số nguyên nhân sau: \n
+    + Sinh viên nợ học phí. \n
+    +  Sinh viên xin tạm dừng học chưa làm đơn học tiếp.\n
+    +  Sinh viên bị đình chỉ học tập chưa làm đơn học tiếp.\n
+    +  Sinh viên hết thời gian học tập.\n
+    Sinh viên xem thông tin cá nhân trên trang http://online.hcmute.edu.vn. Nếu còn thắc mắc thì Sinh viên vui lòng liên hệ phòng CTHSSV (A1-203) để được giải quyết.
+    Để được đăng ký môn học lại, Sinh viên phải hoàn tất học phí cũng như tình trạng của mình trước thời gian đăng ký môn học."
+
+  utter_dkmonhoc3:
+    - text: "SV không nợ học phí các học kỳ trước đó (SV không bị khóa tên). \n
+    + Vào trang online.hcmute.edu.vn. Mỗi SV có một Thời khóa biểu dự kiến (SV có thể đăng ký thêm môn học; chuyển nhóm; đổi nhóm; hủy môn học đối với các môn lý thuyết. Các môn học thực tập, thực tập sư phạm, thí nghiệm không được phép chuyển nhóm, không được hủy môn học, không được đăng ký học vượt) -> In và lưu Thời khóa biểu để đi học và khiếu nại sau này."
+
+  utter_dkmonhoc4:
+    - text: "Điều kiện để SV có thể xin học vượt các môn học thực tập, thí nghiệm như sau: \n
+    + Không nợ môn học (theo Chương trình đào tạo) tính đến thời điểm xin đăng ký học vượt. \n
+    + Có điểm trung bình chung tích lũy > 7,5 \n
+    SV đủ điều kiện trên làm đơn gởi Bộ môn và Khoa phê duyệt (kèm theo bảng điểm). Khoa sẽ tổng hợp danh sách và can thiệp với Phòng Đào tạo đăng ký bằng tay cho SV."
+
+  utter_dkmonhoc5:
+    - text: "Không được vì sẽ ảnh hưởng đến kế hoạch học tập của các SV khác trong nhóm, ngoại trừ các trường hợp sau: \n
+             + Sinh viên đã hoàn tất môn học (nhưng do có sự nhầm lẫn trong hệ thống): SV liên hệ với phòng Đào tạo để được huỷ. \n
+             + Có lý do rất chính đáng. SV làm đơn có sự cho phép hủy môn học của Bộ môn quản ngành, Bộ môn quản môn học và trình khoa xem xét cụ thể từng trường hợp."
+
+  utter_dkmonhoc6:
+    - text: "Từ 15 tín chỉ đến 35 tín chỉ."
+
+  utter_dkmonhoc7:
+    - text: "SV không được đăng ký."
+
+  utter_dkmonhoc8:
+    - text: "SV đã hoàn tất năm 3 trở đi có thể đăng ký Thực tập tốt nghiệp trong học kỳ chính thức hoặc học kỳ hè (liên hệ đăng ký với Bộ môn quản ngành vào tuần đầu mỗi học kỳ)."
+
+  utter_dkmonhoc9:
+    - text: "HK hè thường dùng để tổ chức các lớp học lại hoặc các lớp thực hành học mới và các lớp thực hành trễ tiến độ (để giảm tải về trang thiết bị thực hành cho học kỳ tiếp), không khuyến khích mở các lớp lý thuyết học mới. Để tổ chức được lớp trong HK hè thì cũng phải đảm bảo về số lượng SV để mở lớp theo quy định (60 sinh viên cho các môn học đại cương và sư phạm và 30 sinh viên cho các môn học chuyên ngành) và phải có GV đồng ý giảng dạy. Với các môn học đại cương, phòng Đào tạo thống kê số SV không đạt để dự kiến mở lớp. \n
+             + Với các môn Cơ sở ngành và Chuyên ngành, Lớp trưởng liên hệ trực tiếp với Chủ nhiệm bộ môn quản môn học để được hướng dẫn cụ thể."
+
+  utter_dkmonhoc10:
+    - text: "Hk hè học trong 5 tuần và thêm 1 tuần thi kết thúc môn. Theo qui định của Phòng Đào tạo: Số tín chỉ sinh viên được đăng ký tối đa là 10 TC lý thuyết hoặc 05 TC thực hành."
+
+  utter_dkmonhoc11:
+    - text: "Có một số môn học mà nếu chưa học trước một số môn khác thì không thể học nó được. Do đó khi đăng ký học vượt, chúng ta cần tham khảo Kế hoạch đào tạo (cách bố trí các môn học trong các học kỳ) trong chương trình đào tạo của ngành (xem trên web của khoa). Trong mỗi môn học đều có quy định môn học tiên quyết, môn học trước. Vậy nếu chưa học một trong các môn này thì không nên đăng ký học môn đó. Nếu cần, sinh viên liên hệ với nhóm tư vấn để được tư vấn trực tiếp."
+
+
+  utter_dkmonhoc12:
+    - text: "SV có thể đăng ký học những môn ngoài chương trình đào tạo nhưng không được tính vào bảng điểm hay số tín chỉ tích lũy."
+
+
+  utter_dkmonhoc13:
+    - text: "Việc đăng ký học vượt để hoàn thành chương trình học hoàn toàn tùy thuộc vào trình độ, năng lực và sự quyết tâm của các bạn sinh viên. Tuy nhiên các bạn sinh viên cần lưu ý, hiện tại chương trình học cho từng học kỳ của các bạn đã được bộ môn sắp xếp cho phù hợp với năng lực và khả năng của đa số các bạn sinh viên. Lượng kiến thức trong từng học kỳ cũng đã được các thầy cô tính toán hợp lý. Vì vậy, các bạn sinh viên phải suy nghĩ và cân nhắc thật kỹ trước khi quyết định học vượt, nhằm tránh tình trạng các bạn khi đăng ký học vượt lại có điểm trung bình tích lũy thấp."
+
+
+  utter_dkmonhoc14:
+    - text: "Phân loại theo trình tự tổ chức giảng dạy và học tập trong chương trình đào tạo bao gồm các loại môn học: \n
+             + Môn học bình thường: Các môn học không có điều kiện tiên quyết hoặc yêu cầu học trước khi sinh viên đăng ký học tập. \n
+             + Môn học tiên quyết: Môn học A là môn học tiên quyết của môn học B: điều kiện để sinh viên đăng ký học môn học B là kết quả học tập môn học A phải đạt yêu cầu theo quy định của nhà trường.
+             \n + Môn học trước: Môn học A là môn học trước của môn học B: điều kiện để đăng ký học môn học B là sinh viên đã đăng ký và được xác nhận học xong môn A (có thể chưa đạt). Sinh viên được phép đăng ký học môn B vào học kỳ tiếp sau học kỳ đã học môn A.
+             \n + Môn học song hành: Môn học A là môn học song hành của môn học B: điều kiện bắt buộc để đăng ký học môn học B là sinh viên đã đăng ký học môn học A. Sinh viên được phép đăng ký học môn học B vào cùng học kỳ đã đăng ký học môn học A hoặc vào các học kỳ tiếp sau.
+             \n + Môn học tương đương: Môn học tương đương là một hay một nhóm môn học thuộc chương trình đào tạo của một khóa – ngành khác đang tổ chức đào tạo tại trường mà sinh viên được phép tích lũy để thay thế cho một hay một nhóm môn học trong chương trình đào tạo của khóa - ngành đang theo học.
+             \n Môn học thay thế: Môn học hoặc một nhóm môn học mà sinh viên được phép tích lũy để thay thế cho một môn học có trong chương trình đào tạo của khóa – ngành đang theo học nhưng không còn tổ chức giảng dạy do điều chỉnh chương trình đào tạo."
+
+
+  utter_dkmonhoc15:
+    - text: " Thời gian đăng ký môn học 1 tuần và thời gian điều chỉnh 1 tuần. Trong thời gian này sinh viên có thể thay đổi thời khóa biểu của mình, nếu em xóa môn học thì không phải đóng học phí. Tuy nhiên, một số môn học như thực tập không được xóa. Sau thời gian trên sinh viên rút môn học phải đóng học phí, điểm nhập là RT (không tính điểm). Những trường hợp đặc biệt xin xóa môn học sau thời gian điều chỉnh, sinh viên làm đơn xin ý kiến của Khoa và Phòng Đào tạo. "
+
+
+  utter_dkmonhoc16:
+    - text: "Về việc học môn cùng tên khác mã thì sẽ xem là môn học ngoài chương trình và tính vào tích lũy nếu đạt nhưng môn học đó vẫn chưa hoàn thành, trừ khi 2 môn học đó là tương đương trong chương trình thì em học mã môn học nào cũng được và lúc đó sẽ xem là đạt. Em có thể liên hệ thầy Thái, Phòng Đào tạo, A1-202 để kiểm tra giữa môn học xếp lịch cứng và môn học trong chương trình đào tạo của em."
+
+  utter_dkmonhoc17:
+    - text: "Học kỳ hè (học kỳ 3), phòng Đào tạo (PĐT) sẽ tổ chức các lớp học giáo dục quốc phòng (GDQP) 1,2,3. SV học đúng tiến độ sẽ được PĐT xếp lịch học cứng, những trường hợp xin xóa môn học thì làm đơn nộp PĐT để được xem xét. Các SV khóa trước nếu rớt học phần nào thì đăng ký học lại học phần đó theo thông báo ĐKMH qua mạng của PĐT. Em xem thông báo và đăng ký nhé."
+
+  utter_dkmonhoc18:
+    - text: "SV điều chỉnh đăng ký môn học trong thời gian được phép điều chỉnh (theo thông báo của Phòng Đào tạo). Hết thời gian trên SV phải học theo thời khóa biểu của mình và không được chuyển nhóm. Trong trường hợp đặc biệt, SV làm đơn nộp tại PĐT để được xem xét. "
+
+  utter_dkmonhoc19:
+    - text: "Những trường hợp SV không đăng ký được môn học do không còn chỗ hoặc không mở lớp, SV liên hệ Khoa để được giải quyết. Phòng Đào tạo sẽ tiếp nhận các đề xuất từ Khoa. "
+
+  utter_dkmonhoc20:
+    - text: "Học kỳ 1 năm nhất, sinh viên học theo thời khóa biểu cố định do nhà trường sắp xếp . Kể từ học kỳ 2 trở đi, sinh viên sẽ đăng ký môn học trên trang Đăng ký học phần. Khoa sắp xếp thời khóa biểu cứng theo chương trình đào tạo và công bố cho sinh viên và sinh viên có thể thay đổi thời khóa biểu theo kế hoạch học của mình. Tuy nhiên có một số điều kiện ràng buộc về việc mở lớp như sĩ số lớp, các môn thực tập, thí nghiệm, sinh viên phải thực hiện theo  thông báo của nhà trường."
+
+  utter_dkmonhoc21:
+    - text: "Thời gian qui định của chương trình đào tạo Đại học là 4 năm, em sẽ được học kéo dài tối đa 4 năm nữa, nếu em thuộc đối tượng chính sách từ 01 đến 07 theo Qui chế tuyển sinh thì em được học kéo dài không hạn chế thời gian. Trong thời gian học kéo dài, em không phải làm đơn xin học tiếp. Nếu em không có tên trong danh sách đăng ký môn học thì thường là em đang nợ học phí, em phải hoàn tất học phí theo thông báo của Phòng Kế hoạch - Tài chính thì mới được phép đăng ký môn học của học kỳ tiếp theo. Nếu em hoàn tất học phí quá trễ khi đã hết thời gian ĐKMH thì em phải làm đơn tạm dừng học kỳ, học kỳ tiếp theo em phải làm đơn xin tiếp tục học trước khi ĐKMH."
+
+#Điểm rèn luyện
+  utter_drl1:
+    - text: "Xem xét, đánh giá kết quả rèn luyện của SV là đánh giá về phẩm chất chính
+             trị, đạo đức, lối sống của từng SV trên các mặt: Ý thức và kết quả học tập; Ý thức và
+             kết quả chấp hành nội quy, quy chế trong nhà trường; Ý thức và kết quả tham gia các
+             hoạt động chính trị – xã hội, văn hóa, văn nghệ, thể thao, phòng chống các tệ nạn xã
+             hội; Phẩm chất công dân và quan hệ với cộng đồng; Ý thức và kết quả tham gia công
+             tác của lớp, các đoàn thể, tổ chức khác trong nhà trường hoặc các thành tích đặc biệt
+             trong học tập, rèn luyện của SV.
+             Việc đánh giá kết quả rèn luyện của SV nhằm góp phần thực hiện mục tiêu giáo dục là
+             đào tạo con người Việt Nam phát triển toàn diện, có đạo đức, tri thức, sức khoẻ, thẩm
+             mỹ và nghề nghiệp, trung thành với lý tưởng độc lập dân tộc và chủ nghĩa xã hội;"
+
+  utter_drl2:
+    - text: "1. Kết quả phân loại rèn luyện toàn khoá học của từng SV được lưu trong hồ sơ quản
+             lý SV của trường và ghi vào bảng điểm kết quả học tập và rèn luyện của từng SV khi ra
+             trường;
+             \n2. Kết quả rèn luyện của học kỳ được sử dụng để xét học bổng khuyến khích học tập cho
+             SV trong học kỳ đó;
+             \n3. Kết quả rèn luyện của năm học, khóa học được sử dụng để xét khen thưởng năm học,
+             khóa học cho SV;
+             \n4. SV được cấp giấy chứng nhận kết quả rèn luyện theo yêu cầu;
+             \n5. SV bị xếp loại rèn luyện kém trong cả năm học, phải tạm ngừng học tập một năm ở
+             năm học tiếp theo và nếu bị xếp loại rèn luyện kém cả năm lần thứ hai thì sẽ bị buộc thôi
+             học.."
+
+  utter_drl3:
+    - text: "Các đơn vị quản lý SV và các đơn vị (Phòng, ban, khoa/TT, Đoàn thể) có liên
+             quan đến các hoạt động học tập và rèn luyện của SV đều được phân quyền đánh giá
+             rèn luyện của SV."
+
+  utter_drl4:
+    - text: "Điểm rèn luyện là điểm mà bạn có được khi tham gia vào những hoạt động
+             tình nguyện, phong trào ở cấp khoa và cấp trường do các đơn vị tổ chức. Các hoạt
+             động thường được cộng điểm rèn luyện là những hoạt động tình nguyện, phong trào,
+             chuỗi chương trình dành cho sinh viên. Trong các hoạt động này bạn có thể tham gia
+             với vai trò là người cổ vũ, lực lượng tham dự, thi đấu hoặc cộng tác viên cho chương
+             trình...
+             \n Việc đánh giá điểm rèn luyện phụ thuộc vào quy mô của hoạt động, chương trình,
+             phong trào. Nếu là hoạt động cấp trường khi tham gia và hoàn thành tốt nhiệm vụ bạn
+             sẽ được cộng 5 điểm rèn luyện, hoạt động quy mô cấp khoa được cộng tối đa là 4 điểm
+             rèn luyện. Ngoài ra tùy theo quy mô và tính chất hoạt động sẽ có mức điểm và hình
+             thức đánh giá khác nhau."
+
+  utter_drl5:
+    - text: "- Điểm CTXH : Điểm đánh giá mức độ hoạt động đã tham gia trong lĩnh vực CTXH.
+             Điểm được tích lũy trong cả quá trình học tạp từ khi nhập học đén khi ra trường của
+             sinh viên.
+
+             \n - Điểm đánh giá ý thức, kết quả học tập, rèn luyện, chấp hành nội quy, quy chế, tham
+             gia các hoạt động chính trị xã hội-văn hóa, văn nghệ thể thao, phòng chống tệ nạn xã
+             hội, tham gia phụ trách lớp,các đoàn thể, tổ chức, phẩm chất công dân và quan hệ với
+             cộng đồng."
+
+  utter_drl6:
+    - text: " - Điểm rèn luyện và điểm CTXH không ảnh hưởng trực tiếp đến việc xét kết quả học
+             tập. Tuy nhiên, nếu sinh viên xếp loại rèn luyện kém sẽ bị xét ngừng học, thôi học, khi
+             đó sẽ không được xét chuyên ngành và tốt nghiệp.
+             \n - Kết quả đánh giá rèn luyện của từng học kỳ được sử dụng để xét học bổng khuyến
+             khích học tập cho sinh viên trong học kỳ đó. Kết quả đánh giá rèn luyện của năm học
+             dùng để xét ngừng học, thôi học. Kết quả đánh giá rèn luyện toàn khóa học được lưu
+             trong hồ sơ quản lý sinh viên của trường và ghi vào bảng điểm kết quả học tập và rèn
+             luyện của sinh viên khi ra trường. Ngoài ra, sinh viên đạt kết quả rèn luyện toàn khóa
+             học loại xuất sắc được nhà trường khen thưởng, biểu dương trong Lễ Tốt nghiệp."
+
+  utter_drl7:
+    - text: "- Những vấn đề phát sinh trong việc cập nhật và tổng hợp ĐRL vào cuối kỳ được giải
+             quyết ở hai đơn vị. Hoạt động cập nhật ĐRL ở cấp khoa và cấp trường. Sinh viên có
+             khiếu nại và thắc mắc khi tham gia hoạt động tại khoa thì khoa sẽ trực tiếp giải đáp và
+             sửa chữa, còn hoạt động cấp trường mọi thắc mắc sẽ được giải quyết tại văn phòng
+             Đoàn – Hội sinh viên trường. Sinh viên ý kiến trực tiếp bằng cách đến Phòng khoa ban
+             hoặc Văn phòng Đoàn trường gặp người chịu trách nhiệm và nói rõ vấn đê.
+             \n - Ngoài ra Sinh viên có thể khiếu nại trực tiếp đơn vị tổ chức để được giải quyết, bảo
+             đảm quyền lợi bản thân khi tham gia hoạt động."
+
+  utter_drl8:
+    - text: "- Phát huy tinh thần xung kích của sinh viên, tình nguyện vì cộng đồng, nhân ái, tương
+             trợ và chủ động góp sức trẻ tham gia giải quyết các vấn đề đang được nhà trường và xã
+             hội quan tâm. Qua đó nâng cáo ý thức, trách nhiệm của sinh viên dối với bản thân và
+             cộng đồng.
+             \n - Giúp sinh viên rèn luyện và nâng cao tính chủ động, sáng tạo, linh hoạt động thực tiễn,
+             hình thành các kỹ năng sống trau dồi bản lĩnh tổ chức công việc,... cho sinh viên trước
+             khi ra trường."
+
+
+#Kết quả học tập
+
+  utter_kqhoctap1:
+    - text: "Điểm học phần làm tròn 01 chữ số thập phân (Ví dụ: điểm học phần là 6,75
+            được làm tròn là 6,8).\n
+            Điểm trung bình chung học kỳ, năm học, tích lũy làm tròn hai chữ số thập phân (Ví
+            dụ: 6,495 làm tròn thành 6,50 ; còn 6,494 thì làm tròn thành 6,49)."
+
+  utter_kqhoctap2:
+    - text: "Theo qui định sẽ lấy điểm cao nhất trong các lần thi."
+
+  utter_kqhoctap3:
+    - text: "Muốn xin điểm I, sinh viên làm đơn gởi Văn phòng khoa (kèm theo các minh
+            chứng cần thiết) trước ngày thi 7 ngày cho đến tối đa sau ngày thi 7 ngày. Sau khi có
+            xác nhận của Khoa, SV nộp đơn tại phòng Đào tạo và nhận lại đơn xin điểm I theo
+            giấy hẹn của Phòng Đào tạo.
+            \n Muốn trả điểm I, sinh viên phôtô đơn xin điểm I (kèm theo bảng gốc) và nộp cho Văn
+            phòng khoa trước ngày thi 1 tuần."
+
+  utter_kqhoctap4:
+    - text: "Tất cả các môn học Sinh viên học đều được in trong bảng điểm. Với những
+            môn học tương đương thì điểm lấy cao nhất trong các lần thi và in 1 dòng. Riêng các
+            môn học làm đơn thay thế để xét tốt nghiệp sau này thì trong bảng điểm in toàn bộ các
+            môn đã từng học."
+
+  utter_kqhoctap5:
+    - text: "Theo quy định tại Điều 27 về Điều kiện xét và công nhận tốt nghiệp có ghi:
+            Tích lũy đủ số học phần quy định cho chương trình đào tạo
+            Do đó việc sinh viên tích lũy đủ số tín chỉ cũng có thể vẫn chưa đủ số học phần quy
+            định nên không thể tốt nghiệp được.
+            Trong trường hợp sinh viên đã tích lũy đủ số học phần quy định cho chương trình đào
+            tạo nhưng vẫn không có tên trong danh sách tốt nghiệp có thể do các môn học thay thế
+            của sinh viên chưa được công nhận, Sinh viên liên hệ Phòng Đào tạo A1-201 để được
+            giải quyết.
+            Sinh viên cũng nên kiểm tra lại tình trạng sinh viên của mình. Nếu đang tạm ngừng
+            học vì lý do nào đó thì sinh viên liên hệ Phòng Công tác học sinh - sinh viên để biết lý
+            do và hoàn tất thủ tục để được học tiếp. Sau đó, sinh viên liên hệ Phòng Đào tạo để xét
+            tốt nghiệp bổ sung."
+
+  utter_kqhoctap6:
+    - text: "Sinh viên liên hệ thư ký Khoa để xem lại bảng điểm gốc của Giảng viên nộp.
+            Phòng Đào tạo và Khoa sẽ phối hợp để giải quyết khiếu nại điểm cho sinh viên nếu có
+            sự không khớp nhau giữa điểm trong bảng điểm gốc của Giảng viên và điểm trên
+            mạng."
+
+  utter_kqhoctap7:
+    - text: "Sau khi kết thúc tuần điều chỉnh đăng ký môn học trên mạng, Sinh viên
+            muốn rút bớt học phần đã đăng ký thì phải làm đơn và nộp tại Phòng Đào tạo, những
+            học phần này không tính điểm (ký hiệu RT trong bảng điểm) nhưng phải đóng học phí.
+            Thời hạn nộp đơn là trước ngày bắt đầu kỳ thi học kỳ 05 tuần."
+
+  utter_kqhoctap8:
+    - text: "GDQP là một học phần bắt buộc trong chương trình. Kết thúc khóa học Sinh
+            viên sẽ được cấp chứng chỉ. Sinh viên liên hệ phòng Đào tạo đê nhận chứng chỉ đó,
+            lưu ý nhận theo kế hoạch và theo lớp, chứ không liên hệ rải rác."
+
+  utter_kqhoctap9:
+    - text: "Hai môn học tương đương thực chất là 1 môn nhưng có hai mã khác nhau
+            (do thay đổi môn học hàng năm). Em học theo mã môn học nào cũng được, nếu đạt
+            xem như tích lũy môn học này rồi và không cần học mã môn học còn lại."
+
+  utter_kqhoctap10:
+    - text: "Xét buộc thôi học căn cứ Điều 16 Hướng dẫn 125 của trường về thực hiện
+            Quy chế 43 của Bộ GD&amp;ĐT. Theo đó, nếu em bị điểm 0.0 các học phần ở học kỳ 1,
+            em sẽ có tên trong danh sách cảnh báo học vụ. Xét buộc thôi học sẽ tiến hành vào cuối
+            học kỳ 3, tính dựa trên ĐTB năm học. Do đó, ĐTB học kỳ 1 của em sẽ ảnh hưởng rất
+            lớn đến ĐTB năm học và có nguy cơ em bị buộc thôi học. Nếu trong học kỳ 1 em gặp
+            điều kiện trở ngại nào đó mà không thể đi thi được thì em có thể làm đơn xin nhận
+            điểm I hoặc xin tạm dừng học (điểm RT). Điểm này không tính vào điểm TB học kỳ
+            nên sẽ không ảnh hưởng đến kết quả học tập cả năm của em. Tuy nhiên khi dự thi trả
+            điểm I thì điểm sẽ nhập vào điểm học kỳ đó. Lúc đó sẽ ảnh hưởng ĐTB năm học."
+
+  utter_kqhoctap11:
+    - text: "Trên bảng điểm của sinh viên sẽ có nhiều điểm trung bình như: ĐTB học kỳ,
+            ĐTB năm học, ĐTB toàn khóa, ĐTB tích lũy.
+            \n Cách tính như sau: đầu tiên em phải trừ ra các môn học Giáo dục thể chất, Giáo
+            dục quốc phòng. Vì các môn này chỉ cần đạt, không tính ĐTB.
+            \n ĐTB học kỳ =∑(điểm từng môn * số tín chỉ tương ứng)/∑ số tín chỉ. Đây cũng là
+            điểm trung bình để xét học bổng.
+            \n ĐTB năm học=∑(điểm cao nhất từng môn * số tín chỉ tương ứng)/∑ số tín chỉ
+            năm học (môn học học 2 lần chỉ tính 1 lần với điểm cao nhất).
+            \n ĐTB toàn khóa tương tự như cách tính ĐTB năm học nhưng tính từ đầu khóa học
+            đến thời điểm đó. Môn học nào học lại nhiều lần thì chỉ tính 1 lần ứng với điểm
+            cao nhất của môn học đó. Tương tự tổng số tín chỉ chỉ tính theo môn học có tính
+            điểm.
+            ĐTB tích lũy tương tự ĐTB toàn khóa nhưng chỉ tính các môn đạt. Đây là ĐTB để
+            xếp loại tốt nghiệp sau này. Em có thể học thêm 1 số môn học khác trong phần tự
+            chọn của chương trình đào tạo mà có điểm cao để nâng phẩy của em lên.
+            \n Nếu em còn thắc mắc thì em có thể liên hệ Cô Sương để hướng dẫn cho em. ĐTB
+            em xem trên trang online đôi khi chưa đúng là do điểm các môn học chưa đầy đủ,
+            thường thì cuối học kỳ điểm trung bình sẽ được cộng."
+
+  utter_kqhoctap12:
+    - text: "Nhà trường công nhận các chứng chỉ ngoại ngữ (CCNN) do các tổ chức khảo
+            thí dưới đây cấp:
+            \n * Viện Khảo thí giáo dục Hoa kỳ: Educational Testing Service (ETS) hoặc đơn vị do ETS ủy nhiệm (đối với các chứng chỉ TOEIC, TOEFL ITP, TOEFL iBT);
+            \n * British Council, IDP Education Australia (đối với chứng chỉ IELTS);
+            \n * Cambridge ESOL (đối với chứng chỉ BULATS);
+            - Điểm chuyển đổi cho các học phần Anh văn được quy đổi theo Quy định 22 (Sinh viên
+            tham khảo bên Thông tin học vụ)."
+
+  utter_kqhoctap13:
+    - text: "Chương trình của em yêu cầu học 2 môn tự chọn trong 5 môn. Nếu em đăng
+            ký 2 môn bất kỳ và thi không đạt môn nào đó thì em có thể đăng ký 1 môn tự chọn
+            khác trong 5 môn học trên."
+
+  utter_kqhoctap14:
+    - text: "Chương trình đào tạo (CTĐT) thường xuyên được cập nhật và kể từ khóa
+            2012 trở đi, CTĐT giảm xuống còn 150 tín chỉ, nên những trường hợp SV học lại bằng
+            môn tương đương hoặc thay thế có thể bị giảm tín chỉ. Tuy nhiên nội dung môn học là
+            đương tương nên SV không phải học thêm môn học khác để đủ số tín chỉ của ngành."
+
+  utter_kqhoctap15:
+    - text: "Em có thể đăng ký môn học tương đương đã được cập nhật trong chương
+            trình đào tạo của em. Nếu vẫn không mở lớp môn tương đương, em xin ý kiến Khoa
+            để học môn thay thế. Nếu có môn thay thế thì em làm đơn thay thế (mẫu đơn nhận tại
+            Phòng Đào tạo hoặc tải trên trang web PĐT), sau khi được Khoa ký duyệt, em nộp đơn
+            tại PĐT. Sau vài ngày em nhận đơn, nếu được sự đồng ý của PĐT thì em đăng ký môn
+            học này thay thế cho môn học rớt."
+
+  utter_kqhoctap16:
+    - text: "Thông thường trường hợp của em là do em có thi lại hoặc học lại một học
+            phần GDQP nào đó ở học kỳ khác không theo lớp ban đầu. Em nên liên hệ với Khoa
+            quản SV hoặc PĐT để được giải quyết. Khoa hoặc PĐT sẽ liên hệ với Trung tâm
+            GDQP để hỏi nguyên nhân và đề nghị cấp bổ sung cho em. Thủ tục và thời gian sẽ báo
+            cho em để em được biết."
+
+  utter_kqhoctap17:
+    - text: "Em có thể có nhu cầu học thêm một số môn học ngoài chương trình đào tạo
+            của ngành em học, em được quyền đăng ký học. Nếu em có nhu cầu học thêm ngành
+            thứ 2, em có thể làm đơn xin học cùng lúc 2 chương trình đạo tạo, ra trường nhận được
+            2 bằng tốt nghiệp với 2 ngành học.
+            \n  Kết quả của môn học này tính vào điểm trung bình học kỳ. Do đó, có thể ảnh
+            hưởng đến học bổng nếu em thi rớt.
+            \n  Nếu em thi đạt, số tín chỉ và điểm môn học này được tính vào số tín chỉ tích lũy và
+            điểm trung bình tích lũy. Nếu em đạt điểm cao sẽ nâng phẩy của em lên và ngược
+            lại. Điểm trung bình tích lũy quy ra xếp loại tốt nghiệp của em sau này.
+            \n  Nếu em thi rớt thì không phải học lại vì khi xét tốt nghiệp chỉ xét các môn trong
+            chương trình đào tạo. Khi in bảng điểm tốt nghiệp, chỉ in các môn học đạt nên
+            không in môn học này."
+
+  utter_kqhoctap18:
+    - text: "Theo quy chế 43 của Bộ Giáo dục &amp; Đào tạo áp dụng cho Đại học, Cao đẳng
+            chính quy và theo hướng dẫn 125 của trường về hướng dẫn thực hiện quy chế, tại Điều
+            28 có ghi: Hạng tốt nghiệp của sinh viên có kết quả học tập toàn khóa loại xuất sắc và
+            giỏi sẽ bị giảm đi một mức, nếu rơi vào một trong các trường hợp sau:
+            \n - Có khối lượng các học phần phải học lại vượt quá 5% so với tổng số tín chỉ quy định
+            cho toàn chương trình;
+            \n - Đã bị kỷ luật từ mức cảnh cáo trở lên trong thời gian học."
+
+  utter_kqhoctap19:
+    - text: "Khi sinh viên có đầy đủ điểm học kỳ và đã hoàn tất chương trình học, Sinh viên có
+            thể làm đơn xin xác nhận đã &quot;Hoàn tất chương trình học&quot; và nộp tại Phòng Đào
+            tạo để được xác nhận. \n
+            Việc xét tốt nghiệp sẽ tiến hành định kỳ vào tháng 3, 9. Những trường hợp môn
+            học kết thúc và có điểm sớm trong học kỳ, xét tốt nghiệp sẽ tiến hành vào tháng 6,
+            12. Giấy chứng nhận tốt nghiệp tạm thời sẽ phát sau ngày họp xét tốt nghiệp là 3
+            tuần. Sinh viên xem thông báo trên trang web Phòng Đào tạo để biết địa điểm và
+            thời gian nhận."
+
+  utter_kqhoctap20:
+    - text: "Chỉ có sinh viên tốt nghiệp loại giỏi thì có thể bị hạ bậc xuống loại khá nếu
+            số tín chỉ các môn học rớt vượt quá 5% tổng số tín chỉ của ngành. Các xếp loại khác
+            không bị ảnh hưởng."
+
+  utter_kqhoctap21:
+    - text: "Theo điều kiện xét tốt nghiệp thì chỉ có sinh viên xếp loại xuất sắc hoặc giỏi
+            bị hạ bậc nếu số tín chỉ học lại vượt quá 5% tổng số tín chỉ của chương trình đào tạo
+            ngành học đó. Việc học cải thiện không phải là học lại nên không tính vào trường hợp
+            trên. Sinh viên không hạn chế học cải thiện."
+
+  utter_kqhoctap22:
+    - text: "Theo điều 28 hướng dẫn của trường về thực hiện Qui chế 43 của Bộ
+            GD&amp;ĐT, chỉ hạ bậc sinh viên tốt nghiệp loại xuất sắc và giỏi, nên tốt nghiệp loại khá
+            không bị ảnh hưởng."
+
+  utter_kqhoctap23:
+    - text: "Theo điều kiện xét tốt nghiệp thì chỉ có sinh viên xếp loại xuất sắc hoặc giỏi
+            bị hạ bậc nếu số tín chỉ học lại vượt quá 5% tổng số tín chỉ của chương trình đào tạo
+            ngành học đó. Việc học cải thiện không phải là học lại nên không tính vào trường hợp
+            trên. Sinh viên không hạn chế học cải thiện."
+
+  utter_kqhoctap24:
+    - text: "Các chương trình đạo tạo của các khóa sau thường có thay đổi so với khóa
+            trước. Những môn học sinh viên chưa đạt có thể học tương đương với các môn học
+            của khóa sau, có thể khác mã môn học, tên môn học và số tín chỉ (thường ít hơn). Tuy
+            nhiên số tín chỉ ít hơn không yêu cầu sinh viên phải học bổ sung môn học khác. Do đó
+            nếu sinh viên không tín lũy đủ số tín chỉ nhưng tín lũy đủ số môn học trong chương
+            trình đào tạo thì đủ điều kiện tốt nghiệp."
+
+  utter_kqhoctap25:
+    - text: "Điểm trung bình chung học kỳ, năm học, tích lũy làm tròn hai chữ số thập
+            phân nên 6.495 làm tròn thành 6.50 nên điểm trung bình của em sẽ là 6.50.
+            Tương tự nếu điểm trung bình là 6.494 thì làm tròn thành 6.49."
+
+  utter_kqhoctap26:
+    - text: "Điểm Giáo dục quốc phòng và Giáo dục thể chất không tính vào điểm trung
+            bình chung cũng như số tín chỉ tích lũy. Sinh viên có thể làm đơn miễn thi nộp Phòng
+            Đào tạo nếu sinh viên đã có chứng chỉ hoàn tất ở một trường đại học khác."
+
+
+#Miễn giảm học phí
+
+  utter_miengiam1:
+    - text: "Nghị định số 49/2010/NĐ-CP ngày 14/5/2010 của Chính phủ quy định về miễn,
+             giảm học phí, hỗ trợ chi phí học tập và cơ chế thu, sử dụng học phí đối với cơ sở giáo dục
+             thuộc hệ thống giáo dục quốc dân từ năm học 2010-2011 đến năm học 2014-2015; Nghị
+             định số 74/2013/NĐ-CP ngày 15/7/2013 của Chính phủ về sửa đổi, bổ sung một số điều
+             của Nghị định số 49/2010/NĐ-CP; Thông tư Liên tịch số 20/2014/TTLT-BGDĐT-BTC-
+             BLĐTBXH ngày 30/5/2014 Hướng dẫn thực hiện Nghị định 49/2010/NĐ-CP &amp; Nghị
+             định 74/2013/NĐ-CP."
+
+  utter_miengiam2:
+    - text: "Từ năm học 2013-2014 trở đi, việc miễn, giảm học phí cho SV được thực hiện tại
+             trường nơi SV đang học tập."
+
+  utter_miengiam3:
+    - text: "Người có công với cách mạng và thân nhân của người có công với cách mạng
+             theo Pháp lệnh ưu đãi người có công với cách mạng số 26/2005/PL-UBTVQH11 ngày
+             29/6/2005, Pháp lệnh số 04/2012/UBTVQH13 ngày 16/7/2012 sửa đổi, bổ sung một số
+             điều của Pháp lệnh ưu đãi người có công với cách mạng: Anh hùng Lực lượng vũ trang
+             nhân dân, Anh hùng Lao động trong kháng chiến; thương binh, người hưởng chính sách
+             như thương binh, thương binh loại B; con của người hoạt động cách mạng trước ngày
+             01/01/1945; con của người hoạt động cách mạng từ ngày 01/01/1945 đến trước Tổng khởi
+             nghĩa 19/8/1945; con của Anh hùng Lực lượng vũ trang nhân dân, con của Anh hùng Lao
+             động trong kháng chiến; con của liệt sỹ; con của thương binh, bệnh binh; con của người
+             hoạt động kháng chiến bị nhiễm chất độc hóa học. SV mồ côi cả cha lẫn mẹ không nơi
+             nương tựa. SV bị tàn tật, khuyết tật có khó khăn về kinh tế. SV là người dân tộc thiểu số
+             thuộc hộ nghèo hoặc hộ cận nghèo theo quy định của Thủ tướng Chính phủ. SV là người
+             dân tộc thiểu số rất ít người, ở vùng có điều kiện kinh tế - xã hội khó khăn và đặc biệt khó
+             khăn (nước ta có 16 dân tộc rất ít người có dân số dưới 10.000 người gồm: La Ha, La Hủ,
+             Pà Thèn, Chứt, Lự, Lô Lô, Mảng, Cống, Cờ Lao, Bố Y, Ngái, Si La, Pú Péo, Brâu, Rơ
+             Măm, Ơ Đu). SV sư phạm (SV học chương trình đào tạo giáo viên kỹ thuật)."
+
+  utter_miengiam4:
+    - text: "Xin cho biết các đối tượng được giảm 50% học phí?."
+
+  utter_miengiam5:
+    - text: "Việc giảm 70% học phí cho học sinh học các nghề nặng nhọc, độc hại chỉ áp
+             dụng cho hệ thống các trường nghề thuộc Bộ Lao động Thương binh &amp; xã hội. SV học
+             các ngành của trường Đại học SPKT Tp. Hồ Chí Minh không thuộc diện giảm 70% học
+             phí."
+
+  utter_miengiam6:
+    - text: "Các đối tượng được hưởng trợ cấp ưu đãi trong giáo dục, đào tạo: SV là anh hùng
+             lực lượng vũ trang, anh hùng lao động, thương binh, hưởng chính sách như thương binh;
+             SV là con liệt sỹ, con thương binh, con của bệnh binh, con của người hưởng chính sách
+             như thương binh…"
+
+  utter_miengiam7:
+    - text: "SV liên hệ Phòng Lao động Thương binh &amp; Xã hội địa phương (nơi đăng ký hộ
+             khẩu thường trú) để được hướng dẫn làm các thủ tục &amp; nhận sổ ưu đãi giáo dục, đào tạo."
+
+  utter_miengiam8:
+    - text: "Theo học kỳ, SV trình sổ ưu đãi giáo dục, đào tạo tại phòng Công tác HSSV để
+             Nhà trường xác nhận vào sổ. Sau đó SV nộp sổ ưu đãi giáo dục, đào tạo cho địa phương
+             (phòng Lao động Thương binh &amp; Xã hội cấp huyện, quận). SV nhận tiền trợ cấp ưu đãi tại
+             địa phương."
+
+  utter_miengiam9:
+    - text: "Có bốn đối tượng được hưởng trợ cấp xã hội với mức trợ cấp hàng tháng như
+             sau: SV là người dân tộc thiểu số có hộ khẩu thường trú từ 3 năm trở lên tại vùng đặc biệt
+             khó khăn theo quy định của Nhà nước (a), mức trợ cấp: 140.000đ/tháng; SV mồ côi cả cha
+             lẫn mẹ, không nơi nương tựa và có hoàn cảnh kinh tế khó khăn (b); SV bị tàn tật giảm khả
+             năng lao động từ 41% trở lên, có hoàn cảnh kinh tế khó khăn (C); SV thuộc gia đình hộ
+             đói (d), mức trợ cấp đều là: 100.000đ/tháng."
+
+  utter_miengiam10:
+    - text: "Em nên liên hệ Phòng Công tác học sinh, sinh viên để được giải quyết. Những
+             trường hợp bị sót, P.CTHSSV và phòng Đào tạo sẽ phối hợp điều chỉnh học phí cho em."
+
+  utter_miengiam11:
+    - text: "SV phải nộp hồ sơ, gồm: Đơn xét hưởng trợ cấp xã hội theo mẫu (nhận mẫu đơn
+             tại phòng Công tác HSSV hoặc downloat trên mạng của phòng); Bản sao giấy khai
+             sinh;Bản sao hộ khẩu, giấy xác nhận của địa phương về thời gian thường trú (đối tượng
+             mục a); giấy chứng tử của cha mẹ (đối tượng mục b); biên bản giám định của Hội đồng Y
+             khoa cấp tỉnh, thành phố trực thuộc Trung ương (đối tượng mục c); giấy xác nhận của địa
+             phương về hoàn cảnh kinh tế gia đình khó khăn (đối tượng mục b,c); sổ hộ đói (đối tượng
+             mục d)."
+
+  utter_miengiam12:
+    - text: "SV được nhận tiền hưởng trợ cấp xã hội 06 tháng/học kỳ; 12 tháng/năm."
+
+  utter_miengiam13:
+    - text: "SV nhận trợ cấp xã hội tại Trường, không nhận ở địa phương. Phòng Kế hoạch
+            Tài chính thực hiện việc chi trợ cấp xã hội qua tài khoản Ngân hàng của SV."
+
+  utter_miengiam14:
+    - text: "Hàng năm Nhà trường dành khoảng năm trăm triệu đồng để trợ cấp cho SV có
+             hoàn cảnh khó khăn, SV trong vùng bị thiên tai,…"
+
+  utter_miengiam15:
+    - text: "Đối với các bạn có hoàn cảnh khó khăn nhưng không thuộc diện chính sách
+             bạn có thể:
+             \n  Làm đơn gửi Phòng Kế hoạch tài chính thông qua Khoa, Phòng CTHSSV để hoãn
+             thời gian nộp tiền học phí
+             \n  Bạn có thể tìm hiểu thủ tục vay vốn ngân hàng, Chính sách xã hội vay tiền nếu thực
+             sự khó khăn
+             \n  Liên hệ nhờ sự hỗ trợ từ các quỹ hỗ trợ sinh viên gặp hoàn cảnh khó khăn của
+             khoa, phòng ban, Đoàn thể."
+
+#Hiếu
+
+  utter_greet:
+    - text: "Xin chào!"
+
+  utter_cheer_up:
+    - text: "Mong được gặp lại bạn sau"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_hoi_cachdonghocphi:
+    - text: "Nộp học phí qua tài khoản BIDV 31410000247673 của nhà trường bằng cú pháp [MSSV]_[HO TEN] ví dụ: 2011001 NGUYEN VAN A"
+
+  utter_taisao_spkt:
+    - text: "Trường đại học Sư Phạm Kỹ Thuật là một ngôi trường đào tạo uy tín, chất lượng"
+    - text: "Trường có chất lượng đào tạo hàng đầu"
+
+  utter_hoi_nganh:
+    - text: Trường có ngành {nganh}
+
+  utter_hoi_hocphi:
+    - text: "Học phí từ 8 đến 15 triệu cho mỗi kỳ ở hệ đại trà. Nếu bạn đã là sinh viên hãy [vào](https://online.hcmute.edu.vn/) để xem học phí "
+
+  utter_hoi_phongCTHSSV:
+    - text: "Phòng Công tác HSSV chịu trách nhiệm cấp các loại giấy tờ &amp; giải quyết các yêu cầu sau đây cho SV: Giấy chứng nhận SV (v/v bổ túc hồ sơ tạm hoãn nghĩa vụ quân sự, xin việc làm, xin đi học, xin tạm trú, đi xe buýt, vay tín dụng ưu đãi (mẫu số 01/TDSV), bổ túc hồ sơ địa phương,…); xác nhận sổ ưu đãi giáo dục, đào tạo; giải quyết yêu cầu của SV về tạm dừng học tập, xin học tiếp sau tạm dừng, xin thôi học, xin chuyển trường; giấy giới thiệu,…"
+
+  utter_cap_giay_to:
+    - text: "SV có nhu cầu cấp giấy tờ hoặc giải quyết các yêu cầu, đến phòng Công tác HSSV trình thẻ SV, lấy số, nhận; ghi vào phiếu đề xuất yêu cầu; bộ phận cấp giấy tờ có trách nhiệm kiểm tra, xử lý, in, trình ký, đóng dấu &amp; cấp trực tiếp cho SV."
+
+  utter_thoigian_cap_giayto:
+    - text: "Đối với giấy tờ do lãnh đạo phòng Công tác HSSV ký: SV xin buổi sáng, nhận kết quả vào buổi chiều; SV xin buổi chiều, nhận kết quả vào sáng hôm sau (nếu xin vào sáng thứ 7, nhận kết quả vào sáng thứ 2 tuần kế tiếp). Đối với giấy tờ do Ban giám hiệu ký: SV nhận kết quả sau 03 ngày."
+
+  utter_thoigian_traketqua:
+    - text: "Buổi sáng từ 9h00 đến 11h00; buổi chiều từ 15h00 đến 16h30."
+
+#update
+
+  utter_diachi:
+    - text: "Địa chỉ:Số 01 Võ Văn Ngân, Quận Thủ Đức, Tp. Hồ Chí Minh Điên thoại:028 38968641, 028 37221223; FAX: 028-38964922."
+
+  utter_trangweb:
+    - text: "Website: www.hcmute.edu.vn."
+
+  utter_khoa:
+    - text: "Hiện nay trường có 15 khoa và viện, đào tạo các ngành Khoa học, Kỹ thuật, Công nghệ, Mỹ thuật công nghiệp, Kinh tế, Giáo dục."
+
+  utter_hieutruong:
+    - text: "Hiệu trưởng nhà trường là thầy: PGS.TS Nguyễn Trường Thịnh."
+
+  utter_dientich:
+    - text: "Trường Ðại học Sư phạm Kỹ thuật Thành phố Hồ Chí Minh hiện có diện tích khuôn viên đất cơ sở I (cơ sở chính) là 174.247 m², cơ sở II là 44.408 m²."
+
+  utter_khauhieu:
+    - text: "Khẩu hiệu của trường là: Nhân bản - Sáng tạo - Hội nhập"
+
+  utter_khoaCNTT:
+    - text: "Khoa Công nghệ thông tin được thành lập năm 2001 dựa trên trung tâm Tin học (thành lập năm 1990). Khoa có 2 chương trình đào tạo đại học bao gồm Công nghệ thông tin và Kỹ thuật dữ liệu và 1 chương trình Thạc sĩ Khoa học Máy tính."
+
+  utter_truongkhoaCNTT:
+    - text: "Trưởng khoa CNTT là thầy: Lê Văn Vinh"
+
+  utter_ktx:
+    - text: "Chào bạn, nếu bạn muốn ở ký túc xá thì liên hệ Ban quản lý ký túc xá, lấy mẫu đơn và hoàn tất các thủ tục theo chỉ dẫn, sau hai ngày thì các bạn có thể vào ở KTX  bạn nhé."
+
+  utter_hosonhaphoc:
+    - text: "Giấy báo nhập học (bản chính); Lý lịch SV (dán hình & xác nhận của chính quyền địa phương hoặc cơ quan quản lý); Bản sao bằng TN, chứng nhận TN (có thị thực); Bản sao học bạ (có thị thực); Bản sao giấy khai sinh; Bản sao hộ khẩu (hưởng ưu tiên theo hộ khẩu thường trú); Giấy chứnh nhận diện chính sách (diện ưu tiên theo đối tượng)."
+
+  utter_khamsuckhoe:
+    - text: "Trả lời: hí sinh trúng tuyển đại học khi nhập học bắt buộc phải khám sức khỏe do trường tổ chức phối hợp với các bệnh viện tuyến quận huyện hoặc phòng khám đa khoa tương đương trở lên thực hiện khám và nhận xét, kết luận vào phiếu khám sức khỏe theo mẫu quy định. Phiếu khám sức khỏe được lưu lại trong hồ sơ sinh viên tại trường nơi sinh viên học.( Căn cứ theo điều 35 quy chế tuyển sinh đại học, cao đẳng hệ chính quy)
+                Phí khám sức khỏe theo quy định hiện hành tại thời điểm khám."
+
+  utter_hocba_uutien:
+    - text: "Thí sinh đăng ký thông tin xét tuyển và nộp hồ sơ online tại http://xettuyen.hcmute.edu.vn(có hướng dẫn chi tiết từng bước khi làm hồ sơ). Thí sinh tự chịu trách nhiệm về những thông tin đã đăng ký."
+
+  utter_tracuu_tuyensinh01:
+    - text: "Để tra cứu kết quả tuyển sinh bạn vui lòng truy cập trang web sau: http://tracuuxettuyen.hcmute.edu.vn/tra-cuu"
+  utter_method_tuyensinh:
+    - text: "4 phương thức xét tuyển của Trường ĐH Sư phạm kỹ thuật TP HCM:
+             - Phương thức 1: Xét tuyển thẳng, ưu tiên xét tuyển thẳng
+             - Phương thức 2: Xét tuyển dựa vào kết quả kỳ thi tốt nghiệp THPT năm 2021.
+             - Phương thức 3: Xét tuyển dựa vào điểm trung bình học bạ THPT trong 5 học kỳ (trừ học kỳ 2 lớp 12) của từng môn theo tổ hợp từ 7.0 trở lên.
+             - Phương thức 4: Xét tuyển kết hợp kết quả kỳ thi tốt nghiệp THPT năm 2021 và tổ chức thi riêng đối với 4 ngành: thiết kế thời trang, thiết kế đồ họa, kiến trúc, kiến trúc nội thất."
+
+  utter_tracuu_tuyensinh02:
+    - text: "Trường tuyển thẳng thí sinh đạt giải 1/2/3 học sinh giỏi cấp quốc gia (Toán; Lý, Hóa; Văn; sinh Anh; Sinh; Tin) hoặc Cuộc thi Khoa học kỹ thuật; Điểm trung bình học bạ (ĐTBHB) 5 học kỳ của từng môn theo tổ hợp (có 3 môn), mỗi môn từ 6,0 trở lên"
+
+  utter_tracuu_tuyensinh03:
+    - text: "Nhà trường cấp học bổng bằng 50% học phí toàn khóa cho các thí sinh nữ trúng tuyển nhập học vào các ngành CN Kỹ thuật Ô tô, CN Chế tạo máy, CN Kỹ thuật Cơ khí, CN Kỹ thuật Cơ điện tử, CN Kỹ thuật Nhiệt điện lạnh, CN kỹ thuật công trình xây dựng."
+
+  utter_tracuu_tuyensinh04:
+    - text: "Thời gian nộp hồ sơ xét tuyển: từ ngày 09/3/2021 đến hết ngày 15/6/2021. Ngày 30/6/2021: công bố kết quả học sinh đủ điều kiện vào học tại trường (sẽ chính thức khi học sinh được công nhận tốt nghiệp THPT) trên Facebook: Tuyển sinh ĐH SPKT TPHCM và trên trang tuyển sinh: http://xettuyen.hcmute.edu.vn/#/home"
+
+  utter_tracuu_tuyensinh05:
+    - text: "Để tra cứu điểm chuẩn các năm trước bạn vui lòng truy cập địa chỉ sau: http://tuyensinhdss.hcmute.edu.vn"
+
+  utter_tracuu_tuyensinh06:
+    - text: "Để xem hướng đẫn bạn vui lòng truy cập vào link sau: http://xettuyen.hcmute.edu.vn/assets/file-huong-dan/HuongDanDangKyXetTuyen.pdf hoặc https://www.youtube.com/playlist?list=PLibFbayumkJ7T1S-UDOYP750dWyLM_dX_"
+
+  utter_lephi_xettuyen01:
+    - text: "Phí xét tuyển: 15.000đ/1 nguyện vọng, 100% nộp qua tài khoản ngân hàng của trường."
+
+  utter_lephi_xettuyen02:
+    - text: "Thí sinh nộp lệ phí xét tuyển nguyện vọng vào số tài khoản của trường: 3141.000.4123270(Ngân hàng BIDV). Nội dung chuyển khoản(theo cú pháp): [Số chứng minh nhân dân của thí sinh] [Họ và tên thí sinh] [Nộp lệ phí xét tuyển nguyện vọng]"
+
+  utter_lephi_xettuyen03:
+    - text: "Không. Năm 2021, trường chỉ nhận lệ phí xét tuyển qua phương thức chuyển khoản. Lưu ý khi giao dịch bạn phải ghi đúng cú pháp chuyển khoản: <CMND/CCCD> <Họ và tên> <Nội dung chuyển khoản>, Phần nội dung có thể rút gọn nếu hết ký tự để ghi, tuy nhiên thứ tự phải đúng. Trường sẽ không chịu trách nhiệm khi bạn nhập sai cú pháp chuyển khoản. Bạn cũng nên chụp lưu lại biên lai / ảnh màn hình chuyển khoản thành công để làm minh chứng."

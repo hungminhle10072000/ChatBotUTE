@@ -1,0 +1,40 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: out-of-scope
+  steps:
+  - intent: nlu_fallback
+  - action: utter_out_of_scope
+
+#Hiếu
+- rule: Hỏi về học phí
+  steps:
+  - intent: hoi_hocphi
+  - action: utter_hoi_hocphi
+
+- rule: Hỏi về cách đóng học phí
+  steps:
+  - intent: hoi_cachdonghocphi
+  - action: utter_hoi_cachdonghocphi
+
+- rule: Có nên chọn trường SPKT không
+  steps:
+  - intent: taisao_spkt
+  - action: utter_taisao_spkt
+
+- rule: Trường có ngành này không
+  steps:
+  - intent: hoi_nganh
+  - action: utter_hoi_nganh
+

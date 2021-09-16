@@ -1,0 +1,1052 @@
+version: "2.0"
+
+stories:
+
+#HÙng
+- story: hoi giay to 1
+  steps:
+  - intent: chao_hoi
+  - action: utter_chao_hoi
+  - intent: give_name
+  - action: utter_give_name
+  - intent: chungnhan_giayto1
+  - action: utter_chungnhan_giayto1
+  - intent: cam_on
+  - action: utter_cam_on
+
+- story: hoi_thongtintruong
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: info_namthanhlaptruong
+    - action: utter_info_namthanhlaptruong
+    - intent: info_diachitruong
+    - action: utter_info_diachitruong
+    - intent: info_hinhanhtruong
+    - action: utter_info_hinhanhtruong
+
+- story: hinhanhtruong
+  steps:
+    - intent: info_hinhanhtruong
+    - action: utter_info_hinhanhtruong
+
+- story: hoitamdunghoc
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: tamdunghoc
+    - action: utter_tamdunghoc
+    - intent: trinhtutamdunghoc
+    - action: utter_trinhtutamdunghoc
+    - intent: cam_on
+    - action: utter_cam_on
+
+- story: chuyenganh
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: chuyennganh
+    - action: utter_chuyennganh
+    - intent: camon
+    - action: utter_cam_on
+
+- story: chuyenganh2
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: chuyennganh2
+    - action: utter_chuyennganh2
+    - intent: camon
+    - action: utter_cam_on
+
+- story: chuyenganh3
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: chuyennganh3
+    - action: utter_chuyennganh3
+    - intent: camon
+    - action: utter_cam_on
+
+- story: dkmonhoc1
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: dkmonhoc1
+    - action: utter_dkmonhoc1
+    - intent: camon
+    - action: utter_cam_on
+
+- story: dkmonhoc2
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: dkmonhoc2
+    - action: utter_dkmonhoc2
+    - intent: camon
+    - action: utter_cam_on
+
+
+- story: dkmonhoc3
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: dkmonhoc3
+    - action: utter_dkmonhoc3
+    - intent: camon
+    - action: utter_cam_on
+
+
+- story: dkmonhoc4
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: dkmonhoc4
+    - action: utter_dkmonhoc4
+    - intent: camon
+    - action: utter_cam_on
+
+
+- story: dkmonhoc5
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: dkmonhoc5
+    - action: utter_dkmonhoc5
+    - intent: camon
+    - action: utter_cam_on
+
+
+- story: dkmonhoc6
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: dkmonhoc6
+    - action: utter_dkmonhoc6
+    - intent: camon
+    - action: utter_cam_on
+
+
+- story: dkmonhoc7
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: dkmonhoc7
+    - action: utter_dkmonhoc7
+    - intent: camon
+    - action: utter_cam_on
+
+
+
+- story: dkmonhoc8
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: dkmonhoc8
+    - action: utter_dkmonhoc8
+    - intent: camon
+    - action: utter_cam_on
+
+
+- story: dkmonhoc9
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: dkmonhoc9
+    - action: utter_dkmonhoc9
+    - intent: camon
+    - action: utter_cam_on
+
+
+
+- story: dkmonhoc10
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: dkmonhoc10
+    - action: utter_dkmonhoc10
+    - intent: camon
+    - action: utter_cam_on
+
+
+- story: dkmonhoc11
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: dkmonhoc11
+    - action: utter_dkmonhoc11
+    - intent: camon
+    - action: utter_cam_on
+
+
+- story: dkmonhoc12
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: dkmonhoc12
+    - action: utter_dkmonhoc12
+    - intent: camon
+    - action: utter_cam_on
+
+
+
+- story: dkmonhoc13
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: dkmonhoc13
+    - action: utter_dkmonhoc13
+    - intent: camon
+    - action: utter_cam_on
+
+
+- story: dkmonhoc14
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: dkmonhoc14
+    - action: utter_dkmonhoc14
+    - intent: camon
+    - action: utter_cam_on
+
+
+- story: dkmonhoc15
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: dkmonhoc15
+    - action: utter_dkmonhoc15
+    - intent: camon
+    - action: utter_cam_on
+
+
+- story: dkmonhoc16
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: dkmonhoc16
+    - action: utter_dkmonhoc16
+    - intent: camon
+    - action: utter_cam_on
+
+
+
+- story: dkmonhoc17
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: dkmonhoc17
+    - action: utter_dkmonhoc17
+    - intent: camon
+    - action: utter_cam_on
+
+
+- story: dkmonhoc18
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: dkmonhoc18
+    - action: utter_dkmonhoc18
+    - intent: camon
+    - action: utter_cam_on
+
+
+- story: dkmonhoc19
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: dkmonhoc19
+    - action: utter_dkmonhoc19
+    - intent: camon
+    - action: utter_cam_on
+
+
+- story: dkmonhoc20
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: dkmonhoc20
+    - action: utter_dkmonhoc20
+    - intent: camon
+    - action: utter_cam_on
+
+
+- story: dkmonhoc21
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: dkmonhoc21
+    - action: utter_dkmonhoc21
+    - intent: camon
+    - action: utter_cam_on
+
+- story: drl1
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: drl1
+    - action: utter_drl1
+    - intent: camon
+    - action: utter_cam_on
+
+- story: drl2
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: drl2
+    - action: utter_drl2
+    - intent: camon
+    - action: utter_cam_on
+
+- story: drl3
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: drl3
+    - action: utter_drl3
+    - intent: camon
+    - action: utter_cam_on
+
+- story: drl4
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: drl4
+    - action: utter_drl4
+    - intent: camon
+    - action: utter_cam_on
+
+- story: drl5
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: drl5
+    - action: utter_drl5
+    - intent: camon
+    - action: utter_cam_on
+
+- story: drl6
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: drl6
+    - action: utter_drl6
+    - intent: camon
+    - action: utter_cam_on
+
+- story: drl7
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: drl7
+    - action: utter_drl7
+    - intent: camon
+    - action: utter_cam_on
+
+- story: drl8
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: drl8
+    - action: utter_drl8
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap1
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap1
+    - action: utter_kqhoctap1
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap2
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap2
+    - action: utter_kqhoctap2
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap3
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap3
+    - action: utter_kqhoctap3
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap4
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap4
+    - action: utter_kqhoctap4
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap5
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap5
+    - action: utter_kqhoctap5
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap6
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap6
+    - action: utter_kqhoctap6
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap7
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap7
+    - action: utter_kqhoctap7
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap8
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap8
+    - action: utter_kqhoctap8
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap9
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap9
+    - action: utter_kqhoctap9
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap10
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap10
+    - action: utter_kqhoctap10
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap11
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap11
+    - action: utter_kqhoctap11
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap12
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap12
+    - action: utter_kqhoctap12
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap13
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap13
+    - action: utter_kqhoctap13
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap14
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap14
+    - action: utter_kqhoctap14
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap15
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap15
+    - action: utter_kqhoctap15
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap16
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap16
+    - action: utter_kqhoctap16
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap17
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap17
+    - action: utter_kqhoctap17
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap18
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap18
+    - action: utter_kqhoctap18
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap19
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap19
+    - action: utter_kqhoctap19
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap20
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap21
+    - action: utter_kqhoctap21
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap22
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap22
+    - action: utter_kqhoctap22
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap23
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap23
+    - action: utter_kqhoctap23
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap24
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap24
+    - action: utter_kqhoctap24
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap25
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap25
+    - action: utter_kqhoctap25
+    - intent: camon
+    - action: utter_cam_on
+
+- story: kqhoctap26
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: kqhoctap26
+    - action: utter_kqhoctap26
+    - intent: camon
+    - action: utter_cam_on
+
+- story: miengiam1
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: miengiam1
+    - action: utter_miengiam1
+    - intent: camon
+    - action: utter_cam_on
+
+- story: miengiam2
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: miengiam2
+    - action: utter_miengiam2
+    - intent: camon
+    - action: utter_cam_on
+
+- story: miengiam3
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: miengiam3
+    - action: utter_miengiam3
+    - intent: camon
+    - action: utter_cam_on
+
+- story: miengiam4
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: miengiam4
+    - action: utter_miengiam4
+    - intent: camon
+    - action: utter_cam_on
+
+- story: miengiam5
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: miengiam5
+    - action: utter_miengiam5
+    - intent: camon
+    - action: utter_cam_on
+
+- story: miengiam6
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: miengiam6
+    - action: utter_miengiam6
+    - intent: camon
+    - action: utter_cam_on
+
+- story: miengiam7
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: miengiam7
+    - action: utter_miengiam7
+    - intent: camon
+    - action: utter_cam_on
+
+- story: miengiam8
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: miengiam8
+    - action: utter_miengiam8
+    - intent: camon
+    - action: utter_cam_on
+
+- story: miengiam9
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: miengiam9
+    - action: utter_miengiam9
+    - intent: camon
+    - action: utter_cam_on
+
+- story: miengiam10
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: miengiam10
+    - action: utter_miengiam10
+    - intent: camon
+    - action: utter_cam_on
+
+- story: miengiam11
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: miengiam11
+    - action: utter_miengiam11
+    - intent: camon
+    - action: utter_cam_on
+
+- story: miengiam12
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: miengiam12
+    - action: utter_miengiam12
+    - intent: camon
+    - action: utter_cam_on
+
+- story: miengiam13
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: miengiam13
+    - action: utter_miengiam13
+    - intent: camon
+    - action: utter_cam_on
+
+- story: miengiam14
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: miengiam14
+    - action: utter_miengiam14
+    - intent: camon
+    - action: utter_cam_on
+
+  #Update
+- story: thongtintruong1
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: diachi
+    - action: utter_diachi
+    - intent: trangweb
+    - action: utter_trangweb
+    - intent: khoa
+    - action: utter_khoa
+    - intent: camon
+    - action: utter_cam_on
+
+- story: thongtintruong2
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: hieutruong
+    - action: utter_hieutruong
+    - intent: dientich
+    - action: utter_dientich
+    - intent: khauhieu
+    - action: utter_khauhieu
+    - intent: camon
+    - action: utter_cam_on
+
+- story: khoaCNTT
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: khoa
+    - action: utter_khoa
+    - intent: khoaCNTT
+    - action: utter_khoaCNTT
+    - intent: truongkhoaCNTT
+    - action: utter_truongkhoaCNTT
+    - intent: camon
+    - action: utter_cam_on
+- story: quytrinhktx
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: ktx
+    - action: utter_ktx
+    - intent: camon
+    - action: utter_cam_on
+- story: hosonhaphoc
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: hosonhaphoc
+    - action: utter_hosonhaphoc
+    - intent: camon
+    - action: utter_cam_on
+
+- story: hocba_tuyenthang
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: hosonhaphoc
+    - action: utter_hosonhaphoc
+    - intent: camon
+    - action: utter_cam_on
+- story: hocba_tuyenthang
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: method_tuyensinh
+    - action: utter_method_tuyensinh
+    - intent: camon
+    - action: utter_cam_on
+
+- story: tracuu_tuyensinh01
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: tracuu_tuyensinh01
+    - action: utter_tracuu_tuyensinh01
+    - intent: hocba_uutien
+    - action: utter_hocba_uutien
+    - intent: camon
+    - action: utter_cam_on
+
+- story: tracuu_tuyensinh02
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: method_tuyensinh
+    - action: utter_method_tuyensinh
+    - intent: tracuu_tuyensinh02
+    - action: utter_tracuu_tuyensinh02
+    - intent: camon
+    - action: utter_cam_on
+
+- story: tracuu_tuyensinh03
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: tracuu_tuyensinh03
+    - action: utter_tracuu_tuyensinh03
+    - intent: camon
+    - action: utter_cam_on
+- story: tracuu_tuyensinh04
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: tracuu_tuyensinh05
+    - action: utter_tracuu_tuyensinh05
+    - intent: camon
+    - action: utter_cam_on
+
+- story: tracuu_tuyensinh05
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: tracuu_tuyensinh06
+    - action: utter_tracuu_tuyensinh06
+    - intent: tracuu_tuyensinh04
+    - action: utter_tracuu_tuyensinh04
+    - intent: camon
+    - action: utter_cam_on
+
+- story: lephi_tuyensinh
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: lephi_xettuyen01
+    - action: utter_lephi_xettuyen01
+    - intent: lephi_xettuyen02
+    - action: utter_lephi_xettuyen02
+    - intent: lephi_xettuyen03
+    - action: utter_lephi_xettuyen03
+    - intent: camon
+    - action: utter_cam_on
+
+
+- story: khamsuckhoe
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: khamsuckhoe
+    - action: utter_khamsuckhoe
+    - intent: camon
+    - action: utter_cam_on
+
+- story: miengiam15
+  steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: give_name
+    - action: utter_give_name
+    - intent: miengiam15
+    - action: utter_miengiam15
+    - intent: camon
+    - action: utter_cam_on
+#Hiếu
+- story: cấp phát giấy tờ
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: hoi_phongCTHSSV
+    - action: utter_hoi_phongCTHSSV
+    - action: utter_cap_giay_to
+    - intent: thoigian_cap_giayto
+    - action: utter_thoigian_cap_giayto
+    - action: utter_thoigian_traketqua
+
+- story: happy path
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+
+- story: sad path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_unhappy
+    - action: utter_cheer_up
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+
+- story: sad path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_unhappy
+    - action: utter_cheer_up
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_goodbye

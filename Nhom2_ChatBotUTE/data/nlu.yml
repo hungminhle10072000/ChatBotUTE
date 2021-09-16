@@ -1,0 +1,853 @@
+version: "2.0"
+
+nlu:
+
+#- intent: bot_challenge
+#  examples: |
+#    - are you a bot?
+#    - are you a human?
+#    - am I talking to a bot?
+#    - am I talking to a human?
+
+#- intent: goodbye
+#  examples: |
+#    - good afternoon
+#    - cu
+#    - good by
+#    - cee you later
+#    - good night
+#    - bye
+#    - goodbye
+#    - have a nice day
+#    - see you around
+#    - bye bye
+#    - see you later
+
+- intent: chao_hoi
+  examples: |
+    - Hi
+    - Hello
+    - Chào anh
+    - Chào a
+    - Hi a
+    - Hello a
+    - Hi anh
+    - Hello anh
+    - Alo anh
+    - Alo anh ơi
+    - Alo a ơi
+    - Chào chị
+    - Chào c
+    - Hi c
+    - Hello c
+    - Hi chị
+    - Hello chị
+    - Alo chị
+    - Alo chị ơi
+    - Alo c ơi
+
+
+- intent: cam_on
+  examples: |
+    - Dạ e cảm ơn ạ
+    - Cảm ơn anh chị
+    - Bye
+    - Tạm biệt anh c
+    - Cảm ơn thầy đã tư vấn
+    - Em xin cám ơn và trân trọng kính chào.
+    - Em cảm ơn ạ.
+    - Em xin cám ơn ạ
+
+- intent: chungnhan_giayto1
+  examples: |
+    - Phòng Công tác HSSV chịu trách nhiệm cấp những loại giấy tờ nào cho SV?
+    - Cho e hỏi phòng công tác học sinh sinh viên chịu trách nhiệm những loại giấy tờ nào cho sinh viên ?
+
+- intent: info_namthanhlaptruong
+  examples: |
+    - Cho em hỏi trường thành lập năm bao nhiêu ạ?
+    - Cho e hỏi trường mình được thành lập năm nào ạ
+    - Trường thành lập năm nào ?
+
+- intent: info_diachitruong
+  examples: |
+    - Địa chỉ trường mình nằm ở đâu
+    - Trường đại học sư phạm kỹ thuật nằm ở đâu
+
+- intent: info_hinhanhtruong
+  examples: |
+    - Trường đại học SPKT trông như thế nào
+    - Cho e xin hình ảnh của trường đại học SPKT
+
+- intent: tamdunghoc
+  examples: |
+    - Cho em hỏi về việc dừng học tập có thời hạn
+
+- intent: trinhtutamdunghoc
+  examples: |
+    - Xin cho em biết trình tự tiến hành các thủ tục tạm dừng học tập?
+
+- intent: give_name
+  examples: |
+    - [Anh](cust_sex) là [Phúc](cust_name)
+    - [Em](cust_sex) là [Hùng](cust_name)
+    - [Em](cust_sex) là [Hiếu](cust_name)
+    - [Em](cust_sex) là [Sang](cust_name)
+    - [Em](cust_sex) là [Hoàng](cust_name)
+    - [Em](cust_sex) là [Thắng](cust_name)
+    - [Chị](cust_sex) là [Hằng](cust_name)
+    - [Em](cust_sex) là [Trang](cust_name)
+    - [Cô](cust_sex) [Vân](cust_name)
+    - [Chú](cust_sex) [Hùng](cust_name)
+
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - What is 2 + 2?
+    - Who's the US President?
+
+- intent: chuyennganh
+  examples: |
+    - Xin cho biết về việc chuyển ngành sau khi thí sinh trúng tuyển, nhập học?
+    - Cho e hỏi về việc chuyển ngành sau khi thí sinh trúng tuyển, nhập học
+
+- intent: chuyennganh2
+  examples: |
+    - Xin cho biết về việc SV theo học hai chương trình ?
+    - Cho hỏi về việc SV theo học hai chương trình ?
+    - Xin hỏi việc theo học hai chương trình ?
+
+- intent: chuyennganh3
+  examples: |
+    - Xin cho biết về việc SV học văn bằng hai ?
+    - Cho hỏi về việc SV học văn bằng hai ?
+    - Xin hỏi về việc SV học văn bằng hai ?
+
+#
+#Đăng kí môn học
+- intent: dkmonhoc1
+  examples: |
+    - Làm sao để trả nợ các môn theo CTĐT cũ mà hiện nay không còn mở nữa ?
+    - Cho e hỏi làm sao để trả nợ các môn theo CTĐT cũ mà hiện nay không còn mở nữa ?
+    - E hỏi làm sao để trả nợ các môn theo CTĐT cũ mà hiện nay không còn mở nữa ạ ?
+
+- intent: dkmonhoc2
+  examples: |
+    - Tại sao em không có tên trong danh sách đăng ký môn học của học kỳ này ?
+    - Vì sao em không có tên trong danh sách đăng kí môn học kì này ?
+
+- intent: dkmonhoc3
+  examples: |
+    - Đăng ký môn học như thế nào?
+    - Cho e hỏi đăng ký môn học như thế nào?
+    - Đăng kí môn học như thế nào ?
+#update 
+# học bổng
+- intent: hocbong
+  examples: |
+    - Cho em hỏi là chỉ cần thỏa điều kiện là được học bổng đúng không ạ?	
+    - Điều kiện để nhận học bổng là gì ạ?	
+    - Học bổng ở trường lấy sao ạ?
+#ktx
+- intent: ktx
+  examples: |
+    - Cho em hỏi muốn ở kí túc xá thì phải làm sao ạ?
+    - Cho em xin thủ tục để vào ở kí túc xá ạ
+    - Làm sao để vào ở kí túc xá ạ?
+    - Em muốn ở ktx?
+    - quy trình ở ktx?
+
+#hồ sơ nhập học
+- intent: hosonhaphoc
+  examples: |
+    - SV khi nhập học cần mang những giấy tờ gì ạ?	
+    - Hồ sơ khi nhập học thì cần những gì?	
+    - Nhập học thì cần những giấy tờ gì ạ?	
+# xét học bạ, ưu tiên tuyển thẳng
+- intent: hocba_uutien
+  examples: |
+    - Hồ sơ xét tuyển thẳng cần những gì?
+    - Nộp hồ sơ xét tuyển thẳng như thế nào?
+    - Nộp hồ sơ xét tuyển thẳng ?
+    - cách nộp hồ sơ xét tuyển thẳng?
+    - Nộp hồ sơ xét tuyển học bạ cần những gì
+    - Nộp hồ sơ xét tuyển học bạ như thế nào?
+    - Hồ sơ xét tuyển học bạ cần nộp những gì?
+    - Nộp hồ sơ ưu tiên xét tuyển thẳng
+    - Hướng dẫn tôi cách xét tuyển vào trường?
+
+- intent: method_tuyensinh
+  examples: |
+    - Các phương thức xét tuyển của trường?
+    - Các phương thương thức xét tuyển?
+    - Phương thức xét tuyển?
+    - Các phương thức tuyển sinh của trường?
+    - Phương thức tuyển sinh?
+# tra cuu tuyen sinh
+- intent: tracuu_tuyensinh01
+  examples: |
+    - Tôi có thể tra cứu kết quả xét tuyển ở đâu?
+    - Tra cứu kết quả xét tuyển học bạ?
+    - Tra cứu kết quả xét vào trường?
+    - Tra cứu kết quả tuyển sinh?
+    - Tôi muốn xem kết quả xét tuyển
+- intent: tracuu_tuyensinh02
+  examples: |
+    - Đối tượng được tuyển thẳng vào trường?
+    - Yêu cầu để được tuyển thẳng vào trường?
+    - Điều kiện được tuyển thẳng vào trường là gì?
+    - Để được tuyển thẳng vào trường cần yêu cầu gì?
+- intent: tracuu_tuyensinh03
+  examples: |
+    - Với SV nữ, Nhà trường có ưu ái gì không?
+    - Nhà trường có ưu đãi gì với sinh viên nữ không?
+    - Chính sách miễn giảm học phí của nhà trường với sinh viên nữ là gì?
+    - Sinh viên nữ ngành kỹ thuật có được ưu ái gì không ạ?
+- intent: tracuu_tuyensinh04
+  examples: |
+    - Thời gian nộp hồ sơ xét tuyển vào trường?
+    - Thời gian nộp hồ sơ xét tuyển vào trường là bao lâu?
+    - Khi nào hết hạn nộp hồ sơ xét tuyển vào trường?
+    - Thời gian nộp hồ sơ xét tuyển nguyện vọng vào trường?
+    - Thời hạn nộp hồ sơ xét tuyển nguyện vọng?
+- intent: tracuu_tuyensinh05
+  examples: |
+    - Tôi muốn xem điểm chuẩn các năm trước?
+    - Điểm chuẩn của trường các năm trước?
+    - Xem điểm chuẩn các năm trước ở đâu?
+    - Điểm chuẩn các năm trước?
+    - Tra cứu điểm chuẩn các năm trước ở đâu?
+    - Tôi muốn xem điểm các năm trước thì xem ở đâu?
+- intent: tracuu_tuyensinh06
+  examples: |
+    - Tôi muốn xem hướng dẫn đăng ký xét tuyển?
+    - Cho tôi xem hướng dẫn đăng ký xét tuyển?
+    - Tôi không biết đăng ký xét tuyển như thế nào?
+    - Tôi muốn được hướng dẫn đăng ký xét tuyển?
+- intent: lephi_xettuyen01
+  examples: |
+    - Lệ phí xét tuyển là bao nhiêu?
+    - Phí xét tuyển vào trường là bao nhiêu?
+    - Lệ phí xét tuyển?
+    - Bao nhiêu tiền cho một nguyện vọng xét tuyển vào trường?
+    - Lệ phí xét tuyển nguyện vọng?
+- intent: lephi_xettuyen02
+  examples: |
+    - Nộp lệ phí xét tuyển nguyện vọng
+    - Cách nộp lệ phí xét tuyển nguyện vọng?
+    - Cách nộp lệ phí xét tuyển nguyện vọng vào trường?
+    - Nộp lệ phí xét tuyển ở đâu?
+    - Nộp lệ phí xét tuyển nguyện vọng như thế nào?
+    - Làm sao để nộp lệ phí xét tuyển nguyện vọng?
+- intent: lephi_xettuyen03
+  examples: |
+    - Tôi không chuyển khoản lệ phí xét tuyển được thì nộp tiền trực tiếp được không?
+    - nộp trực tiếp được không?
+    - tôi muốn nộp trực tiếp?
+
+# khám sức khỏe 
+- intent: khamsuckhoe
+  examples: |
+    - Đậu rồi có phải khám sức khỏe ko ạ?	
+    - Trúng tuyển rồi thì phải khám sức khỏe đúng không ạ?	
+    - Khi nhập học là phải khám sức khỏe đúng không ạ?	
+
+# địa chỉ
+- intent: diachi
+  examples: |
+    - trường HCMUTE nằm ở đâu
+    - cho tôi biết địa chỉ của trường đại học sư phạm kỹ thuật thành phố hồ chí minh
+    - cho tôi biết địa chỉ của trường đh spkt tphcm
+    - địa chỉ trường bạn ở đâu
+    - địa chỉ spkt hcm
+    - địa chỉ
+    - địa chỉ hcmute
+# trang web
+- intent: trangweb
+  examples: |
+    - trang web của trường là gì
+    - địa chỉ website của trường
+    - website của trường
+    - địa chỉ website
+    - website
+# khẩu hiệu
+- intent: khauhieu
+  examples: |
+    - khẩu hiệu của nhà trường
+    - khẩu hiệu của trường là gì
+    - triết lý giáo dục của trường
+
+# hiệu trưởng
+- intent: hieutruong
+  examples: |
+    - hiệu trưởng nhà trường là ai
+    - hiệu trường của trường tên gì
+    - tôi muốn biết tên của hiệu trưởng
+    - ai là hiệu trưởng của trường hcmute
+    - hiệu trưởng
+
+# diện tích
+- intent: dientich
+  examples: |
+    - diện tích của trường hcmute
+    - diện tích của nhà trường là bao nhiêu
+    - diện tích của trường
+    - diện tích
+    - trường hcmute rộng bao nhiêu
+    - trường rộng bao nhiêu
+
+# khoa
+- intent: khoa
+  examples: |
+    - hiện tại trường có bao nhiêu khoa
+    - trường dhspkt hcmute có bao nhiêu khoa
+    - trường có bao nhiêu khoa
+    - bạn hãy cho mình biết trường có bao nhiêu khoa
+    - bao nhiêu khoa
+    - số lượng khoa của trường
+
+# khoa CNTT
+- intent: khoaCNTT
+  examples: |
+    - bạn hãy giới thiệu về khoa công nghệ thông tin
+    - bạn hãy giới thiệu về khoa cntt
+    - giới thiệu về khoa cntt
+    - khoa cntt
+    - khoa công nghệ thông tin
+
+# trưởng khoa CNTT
+- intent: truongkhoaCNTT
+  examples: |
+    - trưởng khoa công nghệ thông tin là ai
+    - trưởng khoa cntt
+    - tên của trưởng khoa cntt
+    - trưởng khoa cntt tên gì
+    - ai là trưởng khoa cntt
+
+- intent: dkmonhoc4
+  examples: |
+    - Làm thế nào để có thể tốt nghiệp sớm trước thời hạn nếu các môn học thực tập, thí nghiệm không được phép đăng ký học vượt ?
+
+- intent: dkmonhoc5
+  examples: |
+    - Có được hủy môn học thực tập và thí nghiệm không ?
+    - Hủy môn học thực tập và thí nghiệm được không ?
+
+- intent: dkmonhoc6
+  examples: |
+    - Số tín chỉ tối đa trong một học kỳ được phép đăng ký?
+    - Một học kỳ được pháp đăng ký tối đa bao nhiêu chỉ ?
+
+- intent: dkmonhoc7
+  examples: |
+    - Có được phép đăng ký môn học (cùng mã môn học) nhưng dành cho lớp Chất lượng cao hoặc dành cho hệ Cao đẳng (trong mã môn học có ký hiệu VĐ do TT Việt Đức quản lý)?
+
+- intent: dkmonhoc8
+  examples: |
+    - Điều kiện nào để được đăng ký Thực tập tốt nghiệp?
+
+- intent: dkmonhoc9
+  examples: |
+    - Điều kiện nào để được đăng ký học trong học kỳ 3 (học kỳ hè)?
+
+- intent: dkmonhoc10
+  examples: |
+    - HK hè học trong bao lâu và được đăng ký tối đa bao nhiêu tín chỉ ?
+
+- intent: dkmonhoc11
+  examples: |
+    -  Làm sao để biết đăng ký môn học nào để học vượt cho phù hợp ?
+
+- intent: dkmonhoc12
+  examples: |
+    -  SV có thể đăng ký học những môn ngoài chương trình đào tạo không? Nếu học những môn này, có được tính vào bảng điểm hay số tín chỉ tích lũy không?
+
+- intent: dkmonhoc13
+  examples: |
+    -  Sinh viên có nên đăng ký học vượt hay không ?
+
+- intent: dkmonhoc14
+  examples: |
+    -  Sự khác nhau giữa môn học tiên quyết và môn học song hành như thế nào ?
+
+- intent: dkmonhoc15
+  examples: |
+    -  Có cách nào xóa môn học sau khi hết thời gian ĐKMH ?
+
+- intent: dkmonhoc16
+  examples: |
+    -  Em đăng ký môn học theo lịch cứng do Phòng Đào tạo sắp xếp nhưng khi xem chương trình đào tạo thì em thấy không khớp mã môn học. Vậy em có được công nhận hoàn thành các môn học đó không?.
+
+- intent: dkmonhoc17
+  examples: |
+    -  Em bị rớt học phần quân sự, học kỳ hè này em có thể đăng ký học lại chung với khóa sau được không ?
+
+- intent: dkmonhoc18
+  examples: |
+    -  Sau thời gian đăng ký môn học, em có được chuyển nhóm môn học không?
+
+- intent: dkmonhoc19
+  examples: |
+    -  Khi đăng ký môn học qua mạng không được thì có thể đăng ký tay tại phòng Đào tạo không ?
+
+- intent: dkmonhoc20
+  examples: |
+    -  Em là sinh viên khóa mới khoa Đào tạo chất lượng cao. Ở học kỳ 1 năm nhất em được xếp học theo lịch cứng, em muốn biết học kỳ 2 này em có được đăng ký môn học như các Khoa khác hay không, hay học theo lịch học nhà trường sắp xếp?.
+
+- intent: dkmonhoc21
+  examples: |
+    -  Em đã học hết thời gian 4 năm Đại học tại trường, nhưng chưa đạt đủ số tín chỉ. Trong học kỳ tiếp theo em không có tên trong danh sách đăng ký môn học. Vậy em phải làm đơn xin học tiếp hay phải làm đơn gì?.
+
+#Điểm rèn luyện
+
+- intent: drl1
+  examples: |
+    - Xin cho biết, tại sao phải đánh giá điểm rèn luyện của SV?
+    - Tại sao phải đánh giá điểm rèn luyện của SV?
+
+- intent: drl2
+  examples: |
+    - Điểm rèn luyện dùng để làm gì?
+    - Điểm rèn luyện có tác dụng gì
+
+
+- intent: drl3
+  examples: |
+    - Những cá nhân, đơn vị nào được phân quyền đánh giá điểm rèn luyện SV?
+    - Ai đánh giá điểm rèn luyện của sinh viên ?
+
+- intent: drl4
+  examples: |
+    - Tham gia những hoạt động như thế bào thì sẽ được điểm rèn luyện? Và cụ thể được bao nhiêu điểm?
+
+- intent: drl5
+  examples: |
+    - Điểm CTXH và điểm rèn luyện khác nhau chỗ nào?
+
+- intent: drl6
+  examples: |
+    - Điểm CTXH và điểm rèn luyện có ảnh hưởng đến kết quả học tập hay không?
+    - Điểm CTXH và điểm rèn luyện ảnh hưởng đến kết quả học tập như thế nào ?
+
+- intent: drl7
+  examples: |
+    - Thắc mắc về điểm rèn luyện thì sẽ được giải đáp như thế nào? Ở đâu?
+    - Điểm rèn luyện thắc mắc thì hỏi ở đâu ạ ?
+
+- intent: drl8
+  examples: |
+    - Tham gia hoạt động, phong trào có lợi ích gì thiết thực không?
+    - Ích lợi của việc tham gia các hoạt động phong trào ?
+
+##Kết quả học tập - điểm số
+
+- intent: kqhoctap1
+  examples: |
+    - Quy tắc làm tròn điểm như thế nào?
+    - Cho e hỏi điểm số được làm tròn như thế nào ?
+
+- intent: kqhoctap2
+  examples: |
+    - Em có thắc mắc là khi học cải thiện một môn học thì sẽ được lấy điểm cao hơn hay là điểm của lần học sau cùng?
+    - Cho e hỏi khi học cải thiện một môn học thì sẽ được lấy điểm cao hơn hay là điểm của lần học sau cùng?
+    - Khi học cải thiện một môn học thì sẽ được lấy điểm cao hơn hay là điểm của lần
+      học sau cùng?
+
+- intent: kqhoctap3
+  examples: |
+    - Làm sao để xin điểm I? Muốn trả điểm I thì phải làm thế nào?
+    - Cách xin điểm I ?
+    - Trả điểm I phải làm sao ?
+
+- intent: kqhoctap4
+  examples: |
+    - Em đã làm đơn thay thế môn học và thi đạt, tại sao trong bảng điểm môn học đó vẫn chưa đạt?
+    - Tại sao làm đơn thay thế môn học và thi đạt nhưng điểm môn đó vẫn hiển thị là chưa đạt ?
+
+- intent: kqhoctap5
+  examples: |
+    - Em đã tích lũy đủ số tín chỉ và không vi phạm kỷ luật nhưng trong danh sách tốt nghiệp không có tên em?
+    - Tại sao tích lũy đủ tín chỉ và không vi phạm kỷ luật gì nhưng không có tên trong danh sách tốt nghiệp ?
+
+- intent: kqhoctap6
+  examples: |
+    - Cho e hỏi việc điểm giảng viên công bố trên lớp và điểm trong bảng điểm (hoặc điểm trên mạng) không khớp nhau?
+
+
+- intent: kqhoctap7
+  examples: |
+    - Trong mỗi học kỳ, hạn rút môn học như thế nào?
+
+- intent: kqhoctap8
+  examples: |
+    - Học phần GDQP có quan trọng và bắt buộc không?
+
+- intent: kqhoctap9
+  examples: |
+    - Hai môn học tương đương thì học 1 môn có được không?
+
+- intent: kqhoctap10
+  examples: |
+    - Sinh viên có ĐTB học kỳ 1 là 0.0 có bị buộc thôi học không?
+
+- intent: kqhoctap11
+  examples: |
+    - Cách tính điểm toàn khóa như thế nào, có phải là điểm trung bình của số tín chỉ tích lũy không?
+
+- intent: kqhoctap12
+  examples: |
+    - Chứng chỉ ngoại ngữ quốc tế nào được miễn học và chuyển điểm Anh văn?
+
+- intent: kqhoctap13
+  examples: |
+    - Trong chương trình học có 5 môn tự chọn, yêu cầu học 2 môn. Giả sử em rớt em có thể chọn môn khác không?
+
+- intent: kqhoctap14
+  examples: |
+    - Các môn học tương đương hoặc thay thế bị giảm tín chỉ thì em có phải học thêm môn học không?
+
+- intent: kqhoctap15
+  examples: |
+    - Môn học em thi rớt nhưng học kỳ này không mở lớp học lại, Em muốn đăng ký học để kịp ra trường thì em phải làm sao?
+
+- intent: kqhoctap16
+  examples: |
+    - Em đã thi đạt tất cả các môn học giáo dục quốc phòng nhưng trong danh sách nhận chứng chỉ quốc phòng không có tên em.
+
+- intent: kqhoctap17
+  examples: |
+    - Trong học kỳ này, em có đăng ký một môn ngoài chương trình đào tạo của ngành em học, lỡ em thi không đậu môn đó thì em có phải học lại môn đó không?
+
+- intent: kqhoctap18
+  examples: |
+    - Tại sao em tốt nghiệp loại giỏi bị hạ bậc tốt nghiệp loại khá?
+
+- intent: kqhoctap19
+  examples: |
+    - Em vừa hoàn tất chương trình học có được cấp giấy chứng nhận tốt nghiệp tạm thời?
+
+- intent: kqhoctap20
+  examples: |
+    - Xét tốt nghiệp loại khá có bị hạn chề về điều gì không? chẳng hạn như rới môn học.
+
+- intent: kqhoctap21
+  examples: |
+    - Việc học cải thiện có ảnh hưởng đến xếp loại tốt nghiệp không?
+
+- intent: kqhoctap22
+  examples: |
+    - Xếp loại tốt nghiệp khá có bị hạ bậc không?
+
+- intent: kqhoctap23
+  examples: |
+    - Việc học cải thiện có ảnh hưởng đến xếp loại tốt nghiệp không?
+
+- intent: kqhoctap24
+  examples: |
+    - SV học không đủ số tín chỉ có phải học thêm môn học khác để được tốt nghiệp không?
+
+- intent: kqhoctap25
+  examples: |
+    - Điểm trung bình chung là 6.495 có được tính là 6.50 hay không?
+
+- intent: kqhoctap26
+  examples: |
+    - Điểm Giáo dục quốc phòng và thể chất có tính vào điểm trung bình không?
+
+#Miễn giảm học phí và trợ cấp cho SV
+
+- intent: miengiam1
+  examples: |
+    - Xin cho biết các văn bản pháp quy liên quan đến miễn, giảm học phí ?
+    - Cho e hỏi các văn bản pháp quy liên quan đến miễn, giảm học phí ?
+    - Pháp quy liên quan đến miễn, giảm học phí ?
+
+- intent: miengiam2
+  examples: |
+    - Việc miễn, giảm học phí cho SV áp dụng như thế nào?.
+    - Các thức miễn giảm học phí ?
+    - Miễn giảm học phí áp dụng như nào ?
+
+
+- intent: miengiam3
+  examples: |
+    - Xin cho biết các đối tượng được miễn học phí?
+    - Các đối tượng nào được miễn giảm học phí ?
+    - Đối tượng nào được giảm học phí ?
+
+- intent: miengiam4
+  examples: |
+    - Xin cho biết các đối tượng được giảm 50% học phí?
+    - Cho e hỏi Đối tượng nào thì được giảm 50% học phí ạ ?
+
+- intent: miengiam5
+  examples: |
+    - Xin cho biết việc giảm 70% học phí cho SV học các ngành nặng nhọc, độc hại áp dụng như thế nào?.
+    - Cho e hỏi sv học các ngành nặng nhọc, độc hại được miễn giảm như thế nào ?
+
+- intent: miengiam6
+  examples: |
+    - Xin cho biết các đối tượng được hưởng trợ cấp ưu đãi trong giáo dục, đào tạo ?
+    - Cho e hỏi đối tượng nào được hưởng trợ cấp và ưu đãi trong giáo dục, đào tạo ?
+
+- intent: miengiam7
+  examples: |
+    - Để được cấp sổ ưu đãi trong giáo dục, đào tạo, SV phải làm thủ tục gì ?
+    - Để được hưởng trợ cấp và ưu đãi thì cần những thủ tục gì ạ ?
+
+
+- intent: miengiam8
+  examples: |
+    - Để được nhận tiền ưu đãi trong giáo dục, đào tạo, SV phải làm gì ?
+    - Làm sao để được nhận tiền ưu đãi ?
+
+- intent: miengiam9
+  examples: |
+    - Đề nghị cho biết các đối tượng được hưởng trợ cấp xã hội và mức trợ cấp hàng tháng ?
+    - Cho e hỏi các đối tượng nào được hưởng trợ cấp xã hội và mức trợ cấp hàng tháng như thế nào ?
+
+- intent: miengiam10
+  examples: |
+    - Em thuộc diện được miễn giảm học phí, nhưng sao học kỳ hè em không được miễn giảm?
+    - Tại sao em thuộc diện miễn giảm học phí, nhưng học kỳ hè em không được miễn giảm ?
+
+- intent: miengiam11
+  examples: |
+    - Để được hưởng trợ cấp xã hội, SV phải nộp hồ sơ gồm các giấy tờ gì ?
+    - SV phải nộp hồ sơ giấy tờ gì để được hưởng trợ cấp xã hội ?
+
+- intent: miengiam12
+  examples: |
+    - Mỗi học kỳ, SV được nhận tiền hưởng trợ cấp xã hội là mấy tháng ?
+    - Cho e biết mỗi học kì, SV được nhận tiền hưởng trợ cấp xã hội là mấy tháng ạ ?
+    - SV được nhận tiền hưởng trợ cấp xã hội là mấy tháng ở mỗi học kỳ ?
+
+- intent: miengiam13
+  examples: |
+    - SV nhận tiền trợ cấp xã hội tại trường hay ở địa phương ?
+    - Cho hỏi sinh viên nhận tiền trợ cấp xã hội tại trường hay địa phương ?
+
+
+- intent: miengiam14
+  examples: |
+    - Xin cho biết ngoài trợ cấp của nhà nước, hàng năm Trường có trợ cấp cho SV không?.
+    - Cho e hỏi ngoài trợ cấp nhà nước thì trường có thêm trợ cấp cho SV không ?
+
+- intent: miengiam15
+  examples: |
+    - Em đang gặp khó khăn không đủ tiền để đóng học phí. Vậy em cần làm gì để có thể đóng học phí chậm hơn quy định mà không bị kỷ luật không ạ?
+    - Em cần làm gì để đóng học phí chậm hơn quy định mà không bị kỷ luật ?
+    - Cho e hỏi các thủ tục để có thể đóng học phí chậm hơn quy định mà không bị kỷ luật không ạ ?
+
+
+#Hiếu
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - xin chào
+    - chào bạn
+    - chào em
+    - cháu chào ông
+    - em chào anh
+    - chú chào cháu
+    - ông chào cháu
+    - anh ơi
+    - bạn ơi
+    - chú ơi
+    - chị ơi
+    - cô ơi
+    - thím ơi
+    - bot ơi
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - tạm biệt
+    - chào tạm biệt
+    - chào tạm biệt em
+    - tạm biệt cháu
+    - tạm biệt em
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - vâng
+    - dạ
+    - được
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: hoi_nganh
+  examples: |
+    - Trường có ngành [Công nghệ thông tin](nganh) không ạ?
+    - Ngành [kinh tế](nganh) có không?
+    - Trường đào tạo ngành [Xây dựng](nganh) không?
+
+
+- intent: hoi_hocphi
+  examples: |
+    - Học phí nhiêu?
+    - Bên mình đóng tiền bao nhiêu anh?
+    - Bên mình đóng tiền bao nhiêu ạ?
+
+- intent: hoi_cachdonghocphi
+  examples: |
+    - Cách đóng học phí?
+    - Đóng học phí như thế nào?
+    - Làm sao đóng học phí?
+    - Muốn đóng học phí
+    - Cần đóng học phí
+    - Học phí đóng sao ạ?
+    - Học phí bên trường đóng sao anh nhỉ?
+    - Tiền học đóng sao anh?
+    - Tiền học nhiêu?
+
+- intent: taisao_spkt
+  examples: |
+    - Tại sao chọn trường sư phạm kỹ thuật
+    - Tại sao nên chọn trường này?
+    - Có nên chọn SPKT hay không?
+
+- intent: hoi_phongCTHSSV
+  examples: |
+    - Phòng Công tác HSSV chịu trách nhiệm cấp những loại giấy tờ nào cho SV?
+    - Phòng công các HSSV cấp giấy tờ nào ạ?
+    - Những giấy tờ do phòng công tác HSSV cấp?
+
+- intent: cap_giay_to
+  examples: |
+    - Làm sao để cấp giấy tờ
+    - Sinh viên phải làm gì để cấp giấy tờ
+    - Làm thế nào để cấp giấy tờ?
+    - Để được cấp giấy tờ, SV phải làm gì?
+
+- intent: thoigian_cap_giayto
+  examples: |
+    - Mấy bao lâu để được cấp giấy tờ?
+    - Phải mất thời gian bao lâu để được cấp giấy tờ?
+
+- intent: thoigian_traketqua
+  examples: |
+    - Thời gian trả kết quả trong ngày như thế nào?
+    - Thời gian trả kết quả trong ngày?
+    - Thời gian trả kết quả cho sinh viên?
+
+- intent: out_of_score
+  examples: |
+    - Có thể làm gì?
+    - Có phát người yêu không?
+    - Tôi muốn có người yêu
+
+
+
+- lookup: nganh
+  examples: |
+    - Công nghệ thông tin
+    - Điện tử viễn thông
+    - Quản lý công nghiệp
+    - Kinh tế
+    - Xây dựng
+    - Chế tạo máy
+    - Cơ ký
+    - Chất lượng cao
+
+- synonym: nhieu
+  examples: |
+    - nhiêu
+    - nhiu
+
+- synonym: spkt
+  examples: |
+    - Sư phạm kỹ thuật
+    - Trường đại học sư phạm kỹ thuật
+    - Trường đại học sư phạm kỹ thuật thành phố Hồ Chí Minh
+    - Trường đại học sư phạm kỹ thuật tp.HCM
+    - ĐHSPKTHCM
+    - HCMUTE
+    - ho chi minh university of technology and education
+
+- synonym: HSSV
+  examples: |
+    - học sinh sinh viên
+    - hssv
+
+- synonym: SV
+  examples: |
+    - sinh viên
+    - sv
